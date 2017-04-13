@@ -605,13 +605,12 @@ nav {
     border-bottom: 1px #77B6EB solid;
 }
 
-.contact .u-full-width {
+.contact .container {
     text-align: center;
 }
 
 .social {
     text-align: center;
-    display: inline;
 }
 
 
