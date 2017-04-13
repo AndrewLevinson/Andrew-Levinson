@@ -631,6 +631,59 @@ nav {
 }
 
 
+
+
+/* Accordion
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+button2.accordion {
+/*    background-color: #eee;*/
+/*    color: #77B6EB;*/
+    cursor: pointer;
+/*    padding: 18px;*/
+/*    width: 100%;*/
+/*    text-align: left;*/
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/*button2.accordion.active, */
+
+
+
+button2.accordion:hover {
+    color: #77B6EB;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+
+div.panel {
+/*    padding: 0 18px;*/
+/*    background-color: white;*/
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+button2.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+/*    color: #777;*/
+    float: right;
+    margin-top: -10%;
+}
+
+button2.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
