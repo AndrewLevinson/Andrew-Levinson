@@ -27,12 +27,14 @@
 
 
 /* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 .container {
     position: relative;
     width: 100%;
-    max-width: 960px;
+    max-width: 800px;
+    /* Changed max-width from 960 default down to 800
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -587,32 +589,6 @@ hr {
     border-top: 1px solid #E1E1E1;
 }
 
-nav {
-    border-bottom: 1px #000000 solid;
-}
-
-.content .nine.columns {
-    border-bottom: 1px #000000 solid;
-}
-
-.footer {
-    color: #979797;
-    text-align: center;
-    font-size: 80%;
-}
-
-.content .nine.columns:hover {
-    border-bottom: 1px #77B6EB solid;
-}
-
-.contact .container {
-    text-align: center;
-}
-
-.social {
-    text-align: center;
-}
-
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -626,6 +602,32 @@ nav {
     content: "";
     display: table;
     clear: both;
+}
+
+
+/* Custom CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+nav {
+    border-bottom: 1px #000000 solid;
+}
+
+.content .nine.columns {
+    border-bottom: 1px #000000 solid;
+}
+
+.content .nine.columns:hover {
+    border-bottom: 1px #77B6EB solid;
+}
+
+.footer {
+    color: #979797;
+    text-align: center;
+    font-size: 80%;
+}
+
+.contact {
+    text-align: center;
 }
 
 
@@ -649,8 +651,8 @@ there.
 /* Larger than phablet (also point when grid becomes active) */
 
 @media (min-width: 550px) {
-    .content .container {
-        margin-left: 15%;
+    .content {
+        margin-left: 12.5%;
     }
 }
 
