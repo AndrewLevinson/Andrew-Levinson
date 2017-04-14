@@ -1,7 +1,3 @@
-
-
-
-
 //Accordion Menu
 
 var acc = document.getElementsByClassName("accordion");
@@ -45,7 +41,3 @@ $(document).ready(function () {
         } // End if
     });
 });
-
-
-
-
