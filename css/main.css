@@ -609,14 +609,13 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 nav {
+border-bottom: 1px solid rgba(0, 0, 0, .2);}
+
+.content .eleven.columns {
     border-bottom: 1px #000000 solid;
 }
 
-.content .nine.columns {
-    border-bottom: 1px #000000 solid;
-}
-
-.content .nine.columns:hover {
+.content .eleven.columns:hover {
     border-bottom: 1px #77B6EB solid;
 }
 
@@ -625,12 +624,13 @@ nav {
     text-align: center;
     font-size: 80%;
 }
-
-.contact {
+.contact .two.columns {
     text-align: center;
 }
 
-
+.contact .four.columns {
+    border-bottom: 1px #000000 solid;
+}
 
 
 /* Accordion
@@ -675,7 +675,7 @@ button2.accordion:after {
     font-size: 13px;
 /*    color: #777;*/
     float: right;
-    margin-top: -10%;
+    margin-top: -7.5%;
 }
 
 button2.accordion.active:after {
@@ -704,7 +704,7 @@ there.
 /* Larger than phablet (also point when grid becomes active) */
 
 @media (min-width: 550px) {
-    .content {
+    .header {
         margin-left: 12.5%;
     }
 }
