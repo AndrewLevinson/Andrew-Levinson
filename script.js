@@ -19,7 +19,6 @@ for (i = 0; i < acc.length; i++) {
     }
 }
 
-
 //Page Scroll
 
 $(document).ready(function () {
