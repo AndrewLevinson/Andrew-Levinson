@@ -667,8 +667,10 @@ div.panel {
 /*    background-color: white;*/
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.3s ease-out;
 }
+
+
 
 button2.accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
