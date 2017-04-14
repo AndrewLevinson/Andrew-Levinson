@@ -638,7 +638,13 @@ nav {
     text-align: center;
 }
 
+.adj {
+    margin-top:2%;
+}
 
+.adj2 {
+    text-align: center;
+}
 /* Accordion
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -716,14 +722,18 @@ there.
 @media (min-width: 550px) {
     .header,
     .about-me,
-    .social {
+    .adj2{
         margin-left: 12.5%;
     }
     .social {
-        max-width: 500px;
+/*        max-width: 600px;*/
     }
-}
+    
+    .adj {
+        margin-top: 0%;
+    }
 
+}
 
 /* Larger than tablet */
 
