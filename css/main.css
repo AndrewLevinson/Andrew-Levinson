@@ -645,6 +645,14 @@ nav {
 .adj2 {
     text-align: center;
 }
+
+
+.line {
+/*    border-bottom: 1px #000000 solid;*/
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+
+}
+
 /* Accordion
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -726,7 +734,7 @@ there.
         margin-left: 12.5%;
     }
     .social {
-/*        max-width: 600px;*/
+text-align: center;
     }
     
     .adj {
