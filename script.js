@@ -1,3 +1,17 @@
+
+
+var  mn = $(".main-nav");
+    mns = "main-nav-scrolled";
+    hdr = $('header').height();
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > hdr ) {
+    mn.addClass(mns);
+  } else {
+    mn.removeClass(mns);
+  }
+});
+
 //Accordion Menu
 
 var acc = document.getElementsByClassName("accordion");
@@ -41,3 +55,13 @@ $(document).ready(function () {
         } // End if
     });
 });
+
+
+
+	(function() { 
+            Galleria.loadTheme('galleria/galleria.classic.min.js');
+            Galleria.run('.galleria');
+        }());
+
+
+

@@ -33,19 +33,32 @@
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
-    
-     <!-- Google Analytics
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->   
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+    <script src="galleria/galleria-1.5.6.min.js"></script>
+
+
+    <!-- Google Analytics
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-97455604-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+        ga('create', 'UA-97455604-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
 </head>
 
@@ -120,7 +133,7 @@
                     </button2>
                     <div class="panel" id="design" style="max-height:1000px">
                         <p>It was then when I put everything together and discovered my love for <a href="#" style="font-weight:600">digital product design</a>. Most recently, I've attended an immersive full-time 6-month designer bootcamp where I've designed, prototyped, & developed some passion projects.</p><br>
-                                            <p>*it's a great feeling to find your passion</p>
+                        <p>*it's a great feeling to find your passion</p>
 
                     </div>
                 </div>
@@ -142,6 +155,13 @@
                     </button2>
                     <div class="panel">
                         <p>Back in high school, I began making music and eventually toured with my metal band, <a href="#" style="font-weight:600">MONSTERS</a> accross the country (if I get to Alaska, I'll have been to all 50 states).</p>
+
+
+                        <!-- Standard buttons -->
+                        <div class="twelve columns">
+                            <a class="button" href="music.html">Check out my music</a>
+                        </div>
+                        <br>
                     </div>
                 </div>
             </div>
@@ -161,13 +181,37 @@
                         <h4 id="photo">Travel Photography</h4>
                     </button2>
                     <div class="panel">
-                        <p> And no journey would be complete without some<a href="#" style="font-weight:600"> pictures </a>along the way.</p>
+                        <p> And no journey would be complete without some pictures along the way.<br>Shot with some iPhones and a Nikon D3300. Edited using Lightroom and Photoshop.</p><br>
+
+
+                        <div class="galleria">
+                            <img src="images/photos/DSC_0096_LR_Edit.jpg" height="250">
+                            <img src="images/photos/DSC_0177_LR_Edit.jpg" height="250">
+                            <img src="images/photos/DSC_0096_LR_Edit.jpg" height="250">
+
+                            <img src="images/photos/Kure.jpeg" height="250">
+                            <img src="images/photos/Monte.png" height="250">
+                            <img src="images/photos/DSC_0096_LR_Edit.jpg" height="250">
+                            <img src="images/photos/DSC_0096_LR_Edit.jpg" height="250">
+                            <img src="images/photos/DSC_0096_LR_Edit.jpg" height="250">
+                            <img src="images/photos/DSC_0096_LR_Edit.jpg" height="250">
+                            <img src="images/photos/DSC_0096_LR_Edit.jpg" height="250">
+                            <img src="images/photos/DSC_0096_LR_Edit.jpg" height="250">
+                            <img src="images/photos/DSC_0096_LR_Edit.jpg" height="250">
+                            <img src="images/photos/DSC_0096_LR_Edit.jpg" height="250">
+                            <img src="images/photos/DSC_0096_LR_Edit.jpg" height="250">
+                            <img src="images/photos/DSC_0096_LR_Edit.jpg" height="250">
+                            <img src="images/photos/DSC_0096_LR_Edit.jpg" height="250">
+
+                        </div>
+                        <br><br>
+
                     </div>
                 </div>
             </div>
             <div class="row" style="margin-top: 5%">
                 <div class="seven columns">
-<!--                    <p>*it's a great feeling to find your passion</p>-->
+                    <!--                    <p>*it's a great feeling to find your passion</p>-->
                 </div>
             </div>
         </div>
@@ -265,7 +309,6 @@
 </body>
 
 </html>
-
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
