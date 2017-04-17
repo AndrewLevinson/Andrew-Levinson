@@ -659,6 +659,11 @@ nav {
     width: 100%;
 }
 
+.project img:hover {
+        opacity: .7;
+        box-shadow: 0px 2px 3px #000;
+}
+
 .overlay {
     position: absolute;
     bottom: 0;
