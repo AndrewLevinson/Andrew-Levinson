@@ -616,17 +616,27 @@ nav {
     border-bottom: 1px #000000 solid;
 }
 
+
+
+.accordion h4 {
+    line-height: .45;
+}
+
 .content .twelve.columns:hover {
     border-bottom: 1px #77B6EB solid;
 }
 
 .footer {
     color: #979797;
-    text-align: center;
+/*    text-align: center;*/
     font-size: 80%;
 }
 
 .tiny {
+    font-size: 80%;
+}
+
+.caption {
     font-size: 80%;
 }
 
@@ -747,7 +757,7 @@ button2.accordion:after {
     font-size: 13px;
     /*    color: #777;*/
     float: right;
-    margin-top: -7.5%;
+    margin-top: -4.5%;
     margin-right: 7%;
 }
 
