@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 500px;
+}
+
+header {
+    background-image: url(../images/UNBREAKABLEBanner.png);
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.main-nav,
+.main {
+    position: relative;
+}
+
+.main-nav {
+    background: #fff;
+    height: 75px;
+    z-index: 150;
+    margin-bottom: -100px;
+}
+
+header,
+.main-nav-scrolled {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.main {
+    background: #ffffff;
+    padding: 110px 0px 0px;
+}
+
+.social {
+    color: white;
+    background: #fff;
+    background-color: white;
+}

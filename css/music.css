@@ -26,7 +26,7 @@ header {
 
 .main-nav {
     background: #fff;
-    height: 80px;
+    height: 75px;
     z-index: 150;
     margin-bottom: -100px;
 }
@@ -40,5 +40,11 @@ header,
 
 .main {
     background: #ffffff;
-    padding: 110px 50px 50px;
+    padding: 110px 0px 0px;
+}
+
+.social {
+    color: white;
+    background: #fff;
+    background-color: white;
 }
