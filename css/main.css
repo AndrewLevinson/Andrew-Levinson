@@ -32,14 +32,23 @@
 .container {
     position: relative;
     width: 100%;
-    max-width: 800px;
-    /* Changed max-width from 960 default down to 800
+    max-width: 920px;
+    /* Changed max-width from 960 default down to 860
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
 }
 
+
+.container-nav {
+    position: relative;
+    width: 100%;
+        max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
 .column,
 .columns {
     width: 100%;
@@ -55,6 +64,10 @@
         width: 85%;
         padding: 0;
     }
+        .container-nav {
+        width: 95%;
+        padding: 0;
+    }
 }
 
 
@@ -62,7 +75,10 @@
 
 @media (min-width: 550px) {
     .container {
-        width: 80%;
+        width: 85%;
+    }
+    .container-nav {
+        width: 90%;
     }
     .column,
     .columns {
@@ -698,6 +714,11 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+
+.screen {
+    font-family: Courier; 
 }
 
 
