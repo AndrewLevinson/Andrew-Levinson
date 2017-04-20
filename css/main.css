@@ -684,8 +684,8 @@ nav {
 }
 
 .project img:hover {
-    opacity: .7;
-    box-shadow: 0px 2px 3px #000;
+    opacity: .95;
+/*    box-shadow: 0px 2px 3px #000;*/
 }
 
 .overlay {

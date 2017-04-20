@@ -142,8 +142,8 @@ $(document).ready(function () {
 });
 
 
-
-(function () {
-    Galleria.loadTheme('galleria/galleria.classic.min.js');
-    Galleria.run('.galleria');
-}());
+//
+//(function () {
+//    Galleria.loadTheme('galleria/galleria.classic.min.js');
+//    Galleria.run('.galleria');
+//}());
