@@ -33,7 +33,7 @@ function slider() {
     if (document.body.scrollTop > 200)
         $('#sidebar').stop().animate({"margin-left": '0'});
     else
-        $('#sidebar').stop().animate({"margin-left": '-150'});
+        $('#sidebar').stop().animate({"margin-left": '-250'});
 }
     
  // Nav bar slide in out   

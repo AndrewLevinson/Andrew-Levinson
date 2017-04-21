@@ -5,6 +5,10 @@ body {
 }
 */
 
+.container {
+    width: 65%;
+}
+
 .hero-pic {
 /*    background-image: url(../images/UNBREAKABLEBanner_3.png);*/
 /*    height: 40vh;*/
@@ -96,19 +100,21 @@ hr.vertical {
 }
 
 strike {
-    font-weight: 400;
+/*    font-weight: 300;*/
     font-style: italic;
-    color: #D5C8C8;
+    color: #979797;
 }
 
 
 /*Sidebar code*/
 
 #sidebar {
-    width: 1.5%;
+    width: 0%;
     float: left;
     z-index: 1;
+    display: none;
 }
+
 
 #content-id {
     width: 724px;
@@ -117,10 +123,10 @@ strike {
 }
 
 span {
-    width: 120px;
-    /*    background-color:#fff; */
-    /*    border:solid 1px rgb(220,220,220);*/
-    padding: 0 3%;
+    width: 80px;
+/*        background-color:#fff; */
+/*        border-right:solid 1px rgb(220,220,220);*/
+    padding: 0 7.5%;
 }
 
 span.stick {
@@ -151,4 +157,16 @@ span li a {
 a.span-active {
     color: #77B6EB;
     font-weight: 600;
+}
+
+
+
+
+
+
+
+@media (min-width: 750px) {
+    #sidebar {
+    display: inherit;
+}
 }

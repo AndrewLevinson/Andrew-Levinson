@@ -32,7 +32,7 @@
 .container {
     position: relative;
     width: 100%;
-    max-width: 900px;
+    max-width: 960px;
     /* Changed max-width from 960 default down to 860
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
     margin: 0 auto;
@@ -40,15 +40,15 @@
     box-sizing: border-box;
 }
 
-
 .container-nav {
     position: relative;
     width: 100%;
-        max-width: 1260px;
+    /*        max-width: 960px;*/
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
 }
+
 .column,
 .columns {
     width: 100%;
@@ -64,8 +64,8 @@
         width: 85%;
         padding: 0;
     }
-        .container-nav {
-        width: 95%;
+    .container-nav {
+        width: 85%;
         padding: 0;
     }
 }
@@ -78,7 +78,7 @@
         width: 85%;
     }
     .container-nav {
-        width: 90%;
+        width: 85%;
     }
     .column,
     .columns {
@@ -208,9 +208,9 @@ html {
 }
 
 body {
-    font-size: 1.68em;
+    font-size: 1.5em;
     /* currently ems cause chrome bug misinterpreting rems on body element */
-    line-height: 1.7;
+    line-height: 1.6;
     font-weight: 300;
     font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #31343C;
@@ -292,12 +292,17 @@ h6 {
     h6 {
         font-size: 1.5rem;
     }
-}
+
 
 p {
     margin-top: 0;
 }
 
+body {
+    font-size: 1.68rem;
+    line-height: 1.7;
+}
+}
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -685,7 +690,7 @@ nav {
 
 .project img:hover {
     opacity: .95;
-/*    box-shadow: 0px 2px 3px #000;*/
+    /*    box-shadow: 0px 2px 3px #000;*/
 }
 
 .overlay {
@@ -716,9 +721,8 @@ nav {
     -ms-transform: translate(-50%, -50%);
 }
 
-
 .screen {
-    font-family: Courier; 
+    font-family: Courier;
 }
 
 
@@ -729,7 +733,6 @@ nav {
     height: 400px;
     background: #ffffff
 }
-
 
 .quotes {
     font-style: italic;
