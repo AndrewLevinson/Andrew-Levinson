@@ -9,7 +9,7 @@ $(document).ready(function(){
      * page is scrolled/
      */
     $(window).scroll(function(){
-        var window_top = $(window).scrollTop() + 12; // the "12" should equal the margin-top value for nav.stick
+        var window_top = $(window).scrollTop() + 100; // the "12" should equal the margin-top value for nav.stick
         var div_top = $('#span-anchor').offset().top;
             if (window_top > div_top) {
                 $('span').addClass('stick');
@@ -17,16 +17,45 @@ $(document).ready(function(){
                 $('span').removeClass('stick');
             }
     });
+    
+    
+    
+  //Side bar slide in out  
+$(document).ready(function () {
+    slider();
+});
 
-    /**
-     * This part causes smooth scrolling using scrollto.js
-     * We target all a tags inside the nav, and apply the scrollto.js to it.
-     */
-//    $("span a").click(function(evn){
-//        evn.preventDefault();
-//        $('html,body').scrollTo(this.hash, this.hash); 
-//    });
+$(window).scroll(function () {
+    slider();
+});
 
+function slider() {
+    if (document.body.scrollTop > 200)
+        $('#sidebar').stop().animate({"margin-left": '0'});
+    else
+        $('#sidebar').stop().animate({"margin-left": '-150'});
+}
+    
+ // Nav bar slide in out   
+    
+ $(document).ready(function () {
+    slide();
+});
+
+$(window).scroll(function () {
+    slide();
+});
+
+function slide() {
+    if (document.body.scrollTop > 100)
+        $('#hero').stop().animate({"margin-top": '0'});
+    else
+        $('#hero').stop().animate({"margin-top": '-250'});
+}   
+    
+    
+    
+    
     /**
      * This part handles the highlighting functionality.
      * We use the scroll functionality again, some array creation and 
@@ -71,7 +100,44 @@ $(document).ready(function(){
 
 
 
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
 
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
 
 
 
@@ -85,17 +151,17 @@ $(document).ready(function(){
 
 //Sticky Horizontal Nav
 
-var mn = $(".main-nav");
-mns = "main-nav-scrolled";
-hdr = $('header').height();
-
-$(window).scroll(function () {
-    if ($(this).scrollTop() > hdr) {
-        mn.addClass(mns);
-    } else {
-        mn.removeClass(mns);
-    }
-});
+//var mn = $(".main-nav");
+//mns = "main-nav-scrolled";
+//hdr = $('header').height();
+//
+//$(window).scroll(function () {
+//    if ($(this).scrollTop() > hdr) {
+//        mn.addClass(mns);
+//    } else {
+//        mn.removeClass(mns);
+//    }
+//});
 
 //Accordion Menu
 

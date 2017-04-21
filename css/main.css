@@ -208,9 +208,9 @@ html {
 }
 
 body {
-    font-size: 1.5em;
+    font-size: 1.68em;
     /* currently ems cause chrome bug misinterpreting rems on body element */
-    line-height: 1.6;
+    line-height: 1.7;
     font-weight: 300;
     font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #31343C;
