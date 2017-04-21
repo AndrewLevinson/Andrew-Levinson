@@ -32,7 +32,7 @@
 .container {
     position: relative;
     width: 100%;
-    max-width: 920px;
+    max-width: 900px;
     /* Changed max-width from 960 default down to 860
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
     margin: 0 auto;
@@ -728,6 +728,12 @@ nav {
     max-width: 100%;
     height: 400px;
     background: #ffffff
+}
+
+
+.quotes {
+    font-style: italic;
+    color: #979797;
 }
 
 

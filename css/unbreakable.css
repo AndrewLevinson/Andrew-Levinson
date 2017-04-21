@@ -89,10 +89,16 @@ header,
 
 hr.vertical {
     width: 2.5px;
-    height: 275px;
+    height: 260px;
     /* or height in PX */
     background-color: #D5C8C8;
-    float: right;
+    float: left;
+}
+
+strike {
+    font-weight: 400;
+    font-style: italic;
+    color: #D5C8C8;
 }
 
 
