@@ -129,7 +129,9 @@ a.span-active {
 }
 
 
-
+.mvp{
+    font-weight: 600;
+}
 
 
 /* Media Queries */
