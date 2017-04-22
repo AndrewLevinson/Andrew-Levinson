@@ -33,7 +33,7 @@
     position: relative;
     width: 100%;
     max-width: 960px;
-    /* Changed max-width from 960 default down to 860
+    /* Default max-width 960px
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
     margin: 0 auto;
     padding: 0 20px;
@@ -292,17 +292,15 @@ h6 {
     h6 {
         font-size: 1.5rem;
     }
-
-
-p {
-    margin-top: 0;
+    p {
+        margin-top: 0;
+    }
+    body {
+        font-size: 1.68rem;
+        line-height: 1.7;
+    }
 }
 
-body {
-    font-size: 1.68rem;
-    line-height: 1.7;
-}
-}
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -683,61 +681,36 @@ nav {
     border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 
-.project {
-    position: relative;
-    width: 100%;
-}
-
-.project img:hover {
-    opacity: .95;
-    /*    box-shadow: 0px 2px 3px #000;*/
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #77B6EB;
-    overflow: hidden;
-    width: 0;
-    height: 10%;
-    transition: .5s ease;
-}
-
-.project:hover .overlay {
-    width: 100%;
-}
-
-.text {
-    white-space: nowrap;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
 .screen {
     font-family: Courier;
-}
-
-
-/* Gallery */
-
-.galleria {
-    max-width: 100%;
-    height: 400px;
-    background: #ffffff
 }
 
 .quotes {
     font-style: italic;
     color: #979797;
 }
+
+
+
+.project1 {
+    align-content: center;
+   content: url('../images/UNBREAKABLEBanner_small.png');
+   width: 95%;
+-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.project1:hover {
+   content: url('../images/UNBREAKABLEBanner_small_hover.png');
+    width: 100%;
+/*
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+*/
+}
+
+
+
 
 
 /* Accordion

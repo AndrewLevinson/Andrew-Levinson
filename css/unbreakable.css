@@ -1,38 +1,39 @@
 /*
-body {
-    margin: 0; 
-    margin-top: 52.5%; 
+.container {
+    width: 85%;
 }
 */
 
-.container {
-    width: 65%;
+@media (min-width: 550px) {
+    .container {
+        width: 80%;
+    }
+    header {
+        height: 60px;
+    }
+    .nav-up {
+        top: -61px;
+    }
+}
+
+@media (min-width: 750px) {
+    .container {
+        width: 65%;
+    }
 }
 
 .hero-pic {
-/*    background-image: url(../images/UNBREAKABLEBanner_3.png);*/
-/*    height: 40vh;*/
-/*    width: 100%;*/
-/*    min-height: 550px;*/
-/*    max-height: 600px;*/
-/*    padding-top: 10px;*/
     background-size: 100%;
     background-repeat: no-repeat;
     text-align: center;
     z-index: 350;
-/*    position: relative;*/
     color: #fff;
-}
-
-body {
-/* padding-top: 5%;*/
-/*     margin-top: 75px;*/
 }
 
 header {
     background: #fff;
     background-color: #fff;
-    height: 75px;
+    height: 70px;
     position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
@@ -42,38 +43,8 @@ header {
 }
 
 .nav-up {
-    top: -75px;
+    top: -71px;
 }
-
-
-/*
-
-.main-nav,
-.main {
-    position: relative;
-    background-color: #fff;
-}
-
-.main-nav {
-    background: #fff;
-    height: 75px;
-    z-index: 150;
-    margin-bottom: -80px;
-    box-shadow: 0px 1px 0px rgba(0, 0, 0, .1);
-}
-
-header,
-.main-nav-scrolled {
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-.main {
-    background: #ffffff;
-    padding: 5% 0px 0px;
-}
-*/
 
 .social {
     color: white;
@@ -91,16 +62,10 @@ header,
     font-weight: 500;
 }
 
-hr.vertical {
-    width: 2.5px;
-    height: 260px;
-    /* or height in PX */
-    background-color: #D5C8C8;
-    float: left;
-}
+
 
 strike {
-/*    font-weight: 300;*/
+    /*    font-weight: 300;*/
     font-style: italic;
     color: #979797;
 }
@@ -115,7 +80,6 @@ strike {
     display: none;
 }
 
-
 #content-id {
     width: 724px;
     float: right;
@@ -124,8 +88,8 @@ strike {
 
 span {
     width: 80px;
-/*        background-color:#fff; */
-/*        border-right:solid 1px rgb(220,220,220);*/
+    /*        background-color:#fff; */
+    /*        border-right:solid 1px rgb(220,220,220);*/
     padding: 0 7.5%;
 }
 
@@ -160,13 +124,40 @@ a.span-active {
 }
 
 
+.break {
+    display: none;
+}
 
 
 
 
+
+/* Media Queries */
+
+
+@media (min-width: 550px) {
+    header {
+        height: 60px;
+    }
+    .nav-up {
+        top: -61px;
+    }
+    hr.vertical {
+    width: 2.5px;
+    height: 260px;
+    /* or height in PX */
+    background-color: #D5C8C8;
+    float: left;
+}
+ 
+
+}
 
 @media (min-width: 750px) {
     #sidebar {
+        display: inherit;
+    }
+       .break {
     display: inherit;
 }
 }
