@@ -1,8 +1,6 @@
-/*
 .container {
-    width: 85%;
+    width: 85%; 
 }
-*/
 
 @media (min-width: 550px) {
     .container {
