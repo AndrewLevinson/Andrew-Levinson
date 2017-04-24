@@ -708,6 +708,23 @@ nav {
 }
 
 
+.number-circle {
+   border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+
+    width: 36px;
+    height: 36px;
+    padding: 3px;
+    display: inline-block;
+
+    background: #fff;
+    border: 1px solid #77B6EB;
+    color: #666;
+    text-align: center;
+}
+
+
+
 /* Accordion
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 

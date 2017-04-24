@@ -131,6 +131,9 @@ a.span-active {
     font-weight: 600;
 }
 
+.number {
+    color: #77B6EB;
+}
 
 /* Media Queries */
 
@@ -144,7 +147,7 @@ a.span-active {
     }
     hr.vertical {
     width: 2.5px;
-    height: 260px;
+    height: 760px;
     /* or height in PX */
     background-color: #D5C8C8;
     float: left;
