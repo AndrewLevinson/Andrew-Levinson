@@ -673,9 +673,7 @@ nav {
     margin-top: 2%;
 }
 
-.adj2 {
-    text-align: center;
-}
+
 
 .line {
     border-bottom: 1px solid rgba(0, 0, 0, .2);
@@ -698,29 +696,31 @@ nav {
     transition: width 1.25s, height 1.25s, background-color 1.25s, transform 1.25s;
 }
 
-.project1:hover {
-    content: url('../images/UNBREAKABLEBanner_small_hover.png');
-    width: 100%;
-    /*
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-*/
+
+.project2 {
+    align-content: center;
+    content: url('../images/business/cropdb1.png');
+    width: 92.5%;
+    -webkit-transition: width 1.25s, height 1.25s, background-color 1.25s, -webkit-transform 1.25s;
+    transition: width 1.25s, height 1.25s, background-color 1.25s, transform 1.25s;
 }
 
 
-.number-circle {
-   border-radius: 50%;
-    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+.project3 {
+    align-content: center;
+    content: url('../images/MONSTERSBanner.png');
+    width: 92.5%;
+    -webkit-transition: width 1.25s, height 1.25s, background-color 1.25s, -webkit-transform 1.25s;
+    transition: width 1.25s, height 1.25s, background-color 1.25s, transform 1.25s;
+}
 
-    width: 36px;
-    height: 36px;
-    padding: 3px;
-    display: inline-block;
+.project1:hover, .project2:hover, .project3:hover {
+    width: 100%;
+}
 
-    background: #fff;
-    border: 1px solid #77B6EB;
-    color: #666;
-    text-align: center;
+
+.panel {
+    max-width: 10000px;
 }
 
 
@@ -732,12 +732,7 @@ nav {
 /* Style the buttons that are used to open and close the accordion panel */
 
 button2.accordion {
-    /*    background-color: #eee;*/
-    /*    color: #77B6EB;*/
     cursor: pointer;
-    /*    padding: 18px;*/
-    /*    width: 100%;*/
-    /*    text-align: left;*/
     border: none;
     outline: none;
     transition: 0.4s;
@@ -756,9 +751,7 @@ button2.accordion:hover {
 
 /* Style the accordion panel. Note: hidden by default */
 
-div.panel {
-    /*    padding: 0 18px;*/
-    /*    background-color: white;*/
+.panel {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
@@ -801,15 +794,11 @@ there.
 
 @media (min-width: 550px) {
     .header,
-    .about-me,
-    .adj2 {
+    .about-me {
         margin-left: 12.5%;
     }
     .social {
         text-align: center;
-    }
-    .adj {
-        margin-top: 0%;
     }
 }
 

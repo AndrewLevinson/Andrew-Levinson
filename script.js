@@ -185,6 +185,8 @@ for (i = 0; i < acc.length; i++) {
     }
 }
 
+
+
 //Page Scroll
 
 $(document).ready(function () {
@@ -211,3 +213,14 @@ $(document).ready(function () {
         } // End if
     });
 });
+
+
+
+//$("accordion").accordion();
+//
+//$(".section-link").click(function (e) {
+//    e.preventDefault();
+//    $( "accordion" ).accordion( "option", "active", $(this).parent().index());
+//
+//});
+
