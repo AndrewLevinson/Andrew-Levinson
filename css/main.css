@@ -699,7 +699,7 @@ nav {
 
 .project2 {
     align-content: center;
-    content: url('../images/business/cropdb1.png');
+    content: url('../images/business/consulting.png');
     width: 92.5%;
     -webkit-transition: width 1.25s, height 1.25s, background-color 1.25s, -webkit-transform 1.25s;
     transition: width 1.25s, height 1.25s, background-color 1.25s, transform 1.25s;

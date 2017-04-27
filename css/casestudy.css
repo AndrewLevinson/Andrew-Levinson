@@ -31,7 +31,7 @@
 header {
     background: #fff;
     background-color: #fff;
-    height: 70px;
+    height: 90px;
     position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
@@ -41,7 +41,7 @@ header {
 }
 
 .nav-up {
-    top: -71px;
+    top: -91px;
 }
 
 .social {
@@ -140,12 +140,7 @@ a.span-active {
 /* Media Queries */
 
 @media (min-width: 550px) {
-    header {
-        height: 60px;
-    }
-    .nav-up {
-        top: -61px;
-    }
+
     hr.vertical {
         width: 2.5px;
         height: 760px;
@@ -158,10 +153,20 @@ a.span-active {
 }
 
 @media (min-width: 750px) {
+        header {
+        height: 60px;
+    }
+    .nav-up {
+        top: -61px;
+    } 
+
     #sidebar {
         display: inherit;
     }
     .break {
         display: inherit;
+    }
+    .top {
+        display: none;
     }
 }
