@@ -400,8 +400,8 @@
                                 <div class="twelve columns">
                                     <h5 class="visual-header">Competitive Breakdown</h5>
                                 </div>
-                                <a href="images/competetive.png" target="_blank">
-                                    <img src="images/competetive.png" width="100%"></a>
+                                <a href="images/competitive.png" target="_blank">
+                                    <img src="images/competitive.png" width="100%"></a>
 
                                 <div class="caption">
                                     <a href="https://docs.google.com/document/d/1Jk-lmlfHz7hPhOWgqE7Fc4zI1elJ1GXEXbPflWKzsi8/edit?usp=sharing" target="_blank">
@@ -428,429 +428,431 @@
                                     <img src="images/features.png" width="100%"></a>
 
 
-
-
-                                <br><br><br><br>
-
                             </div>
-                            <div id="info">
-                                <h6 class="section-head">Information Architecture Phase</h6>
-                                <h5>User Stories & Flows</h5>
-                                <p>Using Google Sheets and draw.io, I created both user stories and user flows based on my research & motivation to satisfy my MVP requirements. For new users, onboarding and tool tips are especially crucial for understanding data cards, chatbot interactions, adding favorites, and general navigation. For existing users, interacting with the data cards, records tracking, chatbot, news feed, and scores are all critical for the MVP.
-                                </p>
-                                <br>
-                                <Br>
 
-                                <div class="row center">
-                                    <div class="twelve columns">
-                                        <h5 class="visual-header">User Flows - Chatbot and Cards</h5>
-                                    </div>
-                                    <br>
-                                </div>
-                                <a href="images/user_flows_1.png" target="_blank">
-                                    <img src="images/user_flows_1.png" width="100%"></a>
+                            <br><br><br><br>
 
-                                <br><br><br>
+                        </div>
+                        <div id="info">
+                            <h6 class="section-head">Information Architecture Phase</h6>
+                            <h5>User Stories & Flows</h5>
+                            <p>Using Google Sheets and draw.io, I created both user stories and user flows based on my research & motivation to satisfy my MVP requirements. For new users, onboarding and tool tips are especially crucial for understanding data cards, chatbot interactions, adding favorites, and general navigation. For existing users, interacting with the data cards, records tracking, chatbot, news feed, and scores are all critical for the MVP.
+                            </p>
+                            <br>
+                            <Br>
 
-                                <div class="row center">
-                                    <div class="twelve columns">
-                                        <h5 class="visual-header">User Flows - Feed, Records, Scores</h5>
-                                    </div>
+                            <div class="row center">
+                                <div class="twelve columns">
+                                    <h5 class="visual-header">User Flows - Chatbot and Cards</h5>
                                 </div>
                                 <br>
-
-                                <a href="images/user_flows_2.png" target="_blank">
-                                    <img src="images/user_flows_2.png" width="100%"></a>
-                                <br><br>
-                                <p> By prioritizing my user stories, I was able to reduce the potential “feature bloat” for the first version of Unbreakable - this is how I ended up at the MVP list in the section above.</p>
-                                <br>
-                                <br>
-
-                                <h5>Wireframes</h5>
-                                <p>I used Balsamiq for medium-fi wireframing. During the iterative process, the main focus was to visualize and test the user flows. After some initial testing, I determined that the segmentation of sections via a sticky tab bar at the bottom of the interface provided the best navigation strategy for users.</p>
-                                <p>Additionally, I focused my testing on the chatbot and query functionality, as it is the signature feature of the app. Below are the first iterations of the wireframes.</p>
-                                <br><br>
-
-                                <div class="row center">
-                                    <div class="twelve columns">
-                                        <h5 class="visual-header">Early Wireframes to Test Search & Chatbot Interactions</h5>
-                                    </div>
-                                </div>
-                                <br>
-                                <a href="images/wireframe_old_1.png" target="_blank">
-                                    <img src="images/wireframe_old_1.png" width="100%"></a> <br>
-
-                                <a href="images/wireframe_old_2.png" target="_blank">
-                                    <img src="images/wireframe_old_2.png" target="_blank" width="100%"></a>
-                                <br><br><br>
-                                <p>
-                                    After testing these wireframes, I received a lot of valuable feedback. While I tested the entire app, the most critical changes effected the chatbot functionality.</p>
-                                <br>
-
-
-
-
-
-                                <div class="row center">
-                                    <div class="one column"><br></div>
-                                    <div class="ten columns quotes center">
-                                        <h4>"I'm a little confused by the first screen"</h4>
-                                        <hr class="line-break">
-                                    </div>
-                                    <div class="one column"><br></div>
-                                </div>
-
-                                <div class="row center">
-                                    <div class="one column"><br></div>
-                                    <div class="ten columns quotes center">
-                                        <h4>"What's the difference between the search and the chatbot? "</h4>
-                                        <hr class="line-break">
-                                    </div>
-                                    <div class="one column"><br></div>
-                                </div>
-
-                                <div class="row center">
-                                    <div class="one column"><br></div>
-                                    <div class="ten columns quotes center">
-                                        <h4>"There's just a lot going on..."</h4>
-                                        <hr class="line-break">
-                                    </div>
-                                    <div class="one column"><br></div>
-                                </div>
-
-
-
-                                <br><br>
-                                <p>In the first wireframe screen above, the chatbot and search functions were embedded in a split-screen view and the chatbot would only engage if necessary - after the user initiated a search. There were two issues with this functionality:</p>
-                                <div class="row">
-                                    <div class="offset-by-one columns eleven">
-                                        <ol>
-                                            <li>
-                                                The split screen between cards results and the search or chatbot interactions created to much clutter and competing space for the user. It wasn't simple enough.
-                                            </li>
-                                            <li>
-                                                Having both chatbot and search features is like having one foot in and one foot out on the chatbot feature.
-                                            </li>
-                                        </ol>
-                                    </div><br> Solution: Expand the site map to break out the explore tab into two separate tabs: "cards" for recent results and a dedicated "chatbot" section where a running thread of all queries exist. Additionally, to simplify even more, it made the most sense to convert the search form into a messaging thread. This gives visual context to the user. A search bar yields search results, but a messaging thread will interact with you. All queries will run through the chatbot, the center of the app.
-                                </div>
-                                <br><br>
-                                <div class="row center">
-                                    <div class="twelve columns">
-                                        <h5 class="visual-header">Final Wireframes for Chatbot Interactions</h5>
-                                    </div>
-                                </div>
-                                <br>
-                                <a href="images/revised_wireframes_1_of_3.png" target="_blank">
-                                    <img src="images/revised_wireframes_1_of_3.png" width="100%"></a> <br>
-
-                                <a href="images/revised_wireframes_2_of_3.png" target="_blank">
-                                    <img src="images/revised_wireframes_2_of_3.png" target="_blank" width="100%"></a><br>
-                                <a href="images/revised_wireframes_3_of_3.png" target="_blank">
-                                    <img src="images/revised_wireframes_3_of_3.png" target="_blank" width="100%"></a>
-
-
-
-
-
                             </div>
+                            <a href="images/user_flows_1.png" target="_blank">
+                                <img src="images/user_flows_1.png" width="100%"></a>
+
+                            <br><br><br>
+
+                            <div class="row center">
+                                <div class="twelve columns">
+                                    <h5 class="visual-header">User Flows - Feed, Records, Scores</h5>
+                                </div>
+                            </div>
+                            <br>
+
+                            <a href="images/user_flows_2.png" target="_blank">
+                                <img src="images/user_flows_2.png" width="100%"></a>
+                            <br><br>
+                            <p> By prioritizing my user stories, I was able to reduce the potential “feature bloat” for the first version of Unbreakable - this is how I ended up at the MVP list in the section above.</p>
+                            <br>
+                            <br>
+
+                            <h5>Wireframes</h5>
+                            <p>I used Balsamiq for medium-fi wireframing. During the iterative process, the main focus was to visualize and test the user flows. After some initial testing, I determined that the segmentation of sections via a sticky tab bar at the bottom of the interface provided the best navigation strategy for users.</p>
+                            <p>Additionally, I focused my testing on the chatbot and query functionality, as it is the signature feature of the app. Below are the first iterations of the wireframes.</p>
                             <br><br>
 
-
-                            <div id="visual">
-                                <h6 class="section-head">Visual Design Phase</h6>
-
-                                <h5>Branding and Style</h5>
-                                <p>Starting with pencil and pad, I iterated on many ideas for Unbreakable. It began with the “Unbreakable” text with distress markings streaking throughout the letters. In an attempt to become more abstract but push the concept that all records are meant to be broken, I landed on a single slash between “Un” and ‘Breakable” with a color change between the prefix and the word. In grayscale and at smaller sizes, the white “Breakable” text is much more dominant and visible, adding to the notion and tone of the product.</p>
-                                <p> Pulling away from the literal and into the abstract allows the brand to speak for itself without losing the brand’s density.</p>
-
-                                <br><br>
-
-                                <div class="row center">
-                                    <div class="twelve columns">
-                                        <h5 class="visual-header">Logo Design</h5>
-                                    </div>
+                            <div class="row center">
+                                <div class="twelve columns">
+                                    <h5 class="visual-header">Early Wireframes to Test Search & Chatbot Interactions</h5>
                                 </div>
-
-                                <img src="images/logo_style.png" width="100%">
-
-                                <br><br>
-
-
-                                <p>When building the visual style for Unbreakable, I wanted to convey a playfulness but also maintain a clean design. The sea-green and bright red colors allow for a less serious and fun tone, while the typefaces - Montserrat for headers and Work Sans for body - are robust.</p>
-                                <p>
-                                    The sans-serif typefaces with high x-heights are particularly important, because for a mobile app with densely packed information, legibility and readability are the highest priority. Additionally, in an effort to not sacrifice too much character in the name of readability, Montserrat for headers has an additional quirkiness where the content has flexibility and life.
-                                </p>
-
-                                <br><br>
-                                <div class="row center">
-                                    <div class="twelve columns">
-                                        <h5 class="visual-header">Style Tile</h5>
-                                    </div>
-                                </div>
-                                <br>
-
-                                <img src="images/styletile.png" width="100%">
-
-                                <a href="https://projects.invisionapp.com/boards/J336PSAMT4XSW/" target="_blank">
-                                    <h6 class="caption center">Additional: check out the moodboard I created in Invision.</h6>
-                                </a>
-
-                                <br>
-                                <br>
-                                <h5>Hi-Fi Mockups</h5>
-                                <p>I mocked up my artboards using Sketch. The early iterations were good, but needed to be punched up a little bit. See the example below:</p>
-                                <br><br>
-                                <div class="row center">
-                                    <div class="twelve columns">
-                                        <h5 class="visual-header">Records Artboard Revisions</h5>
-                                    </div>
-                                </div>
-                                <br>
-                                <a href="images/records.png" target="_blank">
-                                    <img src="images/records.png" target="_blank" width="100%"></a>
-                                <br><br>
-                                <p> I applied the changes made here across the entire visual system. A lot of time was spent ensuring a consistency throughout the entire product.</p>
-
-                                <br><br>
-
-
-
-                                <div class="row center">
-                                    <div class="twelve columns">
-                                        <h5 class="visual-header">Hi-Fi: Onboarding</h5>
-                                    </div>
-                                </div>
-                                <br>
-                                <a href="images/onboard_mock.png" target="_blank">
-                                    <img src="images/onboard_mock.png" target="_blank" width="100%"></a>
-                                <br><br>
-
-
-
-
-                                <div class="row center">
-                                    <div class="twelve columns">
-                                        <h5 class="visual-header">Hi-Fi: Sign Up</h5>
-                                    </div>
-                                </div>
-                                <br>
-                                <a href="images/signup_mock.png" target="_blank">
-                                    <img src="images/signup_mock.png" target="_blank" width="100%"></a>
-                                <br><br>
-
-
-
-
-
-                                <div class="row center">
-                                    <div class="twelve columns">
-                                        <h5 class="visual-header">Hi-Fi: Cards</h5>
-                                    </div>
-                                </div>
-                                <br>
-                                <a href="images/cards_mock.png" target="_blank">
-                                    <img src="images/cards_mock.png" target="_blank" width="100%"></a>
-                                <br><br>
-
-
-
-                                <div class="row center">
-                                    <div class="twelve columns">
-                                        <h5 class="visual-header">Hi-Fi: Records</h5>
-                                    </div>
-                                </div>
-                                <br>
-                                <a href="images/records_mock.png" target="_blank">
-                                    <img src="images/records_mock.png" target="_blank" width="100%"></a>
-                                <br><br>
-
-                                <div class="row center">
-                                    <div class="twelve columns">
-                                        <h5 class="visual-header">Hi-Fi: Chatbot</h5>
-                                    </div>
-                                </div>
-                                <br>
-                                <a href="images/chatbot_mock.png" target="_blank">
-                                    <img src="images/chatbot_mock.png" target="_blank" width="100%"></a>
-                                <br><br>
-
-                                <div class="row center">
-                                    <div class="twelve columns">
-                                        <h5 class="visual-header">Hi-Fi: Feed & Scores</h5>
-                                    </div>
-                                </div>
-                                <br>
-                                <a href="images/feed_scores_mock.png" target="_blank">
-                                    <img src="images/feed_scores_mock.png" target="_blank" width="100%"></a>
-                                <br><br>
-
-
-
                             </div>
-                            <br><br>
+                            <br>
+                            <a href="images/wireframe_old_1.png" target="_blank">
+                                <img src="images/wireframe_old_1.png" width="100%"></a> <br>
 
-                            <div id="prototype">
-                                <h6 class="section-head">Prototyping Phase</h6>
-                                <h5>Interactions</h5>
-                                <p>I created my prototype using Flinto. I was not only able to create unique transitions between screens and views, but able to provide the needed interaction design to the signature items and features of the app: data cards, </p>
+                            <a href="images/wireframe_old_2.png" target="_blank">
+                                <img src="images/wireframe_old_2.png" target="_blank" width="100%"></a>
+                            <br><br><br>
+                            <p>
+                                After testing these wireframes, I received a lot of valuable feedback. While I tested the entire app, the most critical changes effected the chatbot functionality.</p>
+                            <br>
 
 
-                                <br>
 
-                                <div class="row center">
-                                    <div class="twelve columns">
-                                        <h5 class="visual-header">Interactions</h5>
-                                    </div>
+
+
+                            <div class="row center">
+                                <div class="one column"><br></div>
+                                <div class="ten columns quotes center">
+                                    <h4>"I'm a little confused by the first screen"</h4>
+                                    <hr class="line-break">
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <div class="one-third column">
-                                        <h5 class="visual-header center">Card Flip</h5>
-
-                                        <a href="videos/card_flip_iso.gif" target="_blank">
-                                            <img src="videos/card_flip_iso.gif" target="_blank" width="100%"></a>
-                                    </div>
-                                    <div class="one-third column">
-                                        <h5 class="visual-header center" style="margin-bottom: 25%">Chatbot</h5>
-
-                                        <a href="videos/chatbot_interact.gif" target="_blank">
-                                            <img src="videos/chatbot_interact.gif" target="_blank" width="100%"></a>
-                                    </div>
-                                    <div class="one-third column">
-                                        <h5 class="visual-header center">Expand Records Cards</h5>
-
-                                        <a href="videos/record_expand.gif" target="_blank">
-                                            <img src="videos/record_expand.gif" target="_blank" width="100%"></a>
-                                    </div>
-                                </div>
-                                <br><br>
-
-
-
-
-                                <br>
-                                <h5>Additional User Testing</h5>
-
-                                <p>
-                                    After a few sets of user tests I was able to revise a couple key sections:
-                                    <br><br> Creating a sub-system of colors to exclusively appear in the records and data cards increased consistency across the entire app. Users can clearly identify when they’re looking at an interactive data-item
-                                    <br><br> Chunking information is also extremely important, especially in the expanded data card view where a lot of info is packed in closely together. By using lighter and unique lines to separate sections and adding more breathing room to the sections, users can focus on large quantities of chunked information without feeling overwhelmed.
-                                    <br><br> Improving the chatbot experience became apparent when, during testing, users weren’t sure how to have a conversation with the chatbot (when to answer, ask questions, etc.). This was less to do with the content in the thread and more about the prototype's job to guide users through a sample interaction with the chatbot. By allowing more tips and tutorial-style responses as well as the ability to review the entire thread after the initial conversation, users could now understand the different types of chatbot related events can occur in the full version.
-                                </p>
+                                <div class="one column"><br></div>
                             </div>
+
+                            <div class="row center">
+                                <div class="one column"><br></div>
+                                <div class="ten columns quotes center">
+                                    <h4>"What's the difference between the search and the chatbot? "</h4>
+                                    <hr class="line-break">
+                                </div>
+                                <div class="one column"><br></div>
+                            </div>
+
+                            <div class="row center">
+                                <div class="one column"><br></div>
+                                <div class="ten columns quotes center">
+                                    <h4>"There's just a lot going on..."</h4>
+                                    <hr class="line-break">
+                                </div>
+                                <div class="one column"><br></div>
+                            </div>
+
+
 
                             <br><br>
-                            <div id="reflections">
-                                <h6 class="section-head">Reflections</h6>
-
-                                <h5>Key Learnings</h5>
-                                <p>Creating and revising Unbreakable from concept to prototype was an intense and rewarding experience. While I consider myself a better designer in many areas after this project, here is a short list of my most significant reflections:
-                                </p><br>
-                                <p>
-                                    1. Iterative branding process. Don’t be so quick to jump from paper to screen. If the branding system isn’t finished, keep sketching.
-                                </p><br>
-                                <p>
-                                    2. Take the space to tell the user about your products. Onboarding screens and tutorials can often go overlooked when creating the product itself; however, user testing proved that your customer won’t revisit your app unless they know exactly what they’re signing up for. Expanding the video clips in the onboarding section and adding more tutorial content to the chatbot thread during the wireframing and visual design phases proved to be fruitful when evaluating conversion rates.
-                                </p><br>
-                                <p>
-                                    3a. MVP. Don’t overlook necessary features that aren’t unique to your app. Understanding through research that user’s aren’t likely to use another sports app unless it include updates on their favorite teams, a news feed, and scores & schedules was imperative to discover early in the discovery phase.
-                                </p><br>
-                                <p>
-                                    3b. Do you have a product or really just a feature? Initial concepts only included a chatbot for records and data cards; however, they did not include favorites tracking, scores, and general sports news (non-data-driven). An app without those features (although simpler) would not have made it into a mainstream sports user's daily active rotation of apps.
-                                </p><br>
-                                <p>
-                                    4. Consistency, consistency, consistency. Making sure every type of item’s design and interaction is consistent across the entire app.
-                                </p>
+                            <p>In the first wireframe screen above, the chatbot and search functions were embedded in a split-screen view and the chatbot would only engage if necessary - after the user initiated a search. There were two issues with this functionality:</p>
+                            <div class="row">
+                                <div class="offset-by-one columns eleven">
+                                    <ol>
+                                        <li>
+                                            The split screen between cards results and the search or chatbot interactions created to much clutter and competing space for the user. It wasn't simple enough.
+                                        </li>
+                                        <li>
+                                            Having both chatbot and search features is like having one foot in and one foot out on the chatbot feature.
+                                        </li>
+                                    </ol>
+                                </div><br> Solution: Expand the site map to break out the explore tab into two separate tabs: "cards" for recent results and a dedicated "chatbot" section where a running thread of all queries exist. Additionally, to simplify even more, it made the most sense to convert the search form into a messaging thread. This gives visual context to the user. A search bar yields search results, but a messaging thread will interact with you. All queries will run through the chatbot, the center of the app.
                             </div>
+                            <br><br>
+                            <div class="row center">
+                                <div class="twelve columns">
+                                    <h5 class="visual-header">Final Wireframes for Chatbot Interactions</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <a href="images/revised_wireframes_1_of_3.png" target="_blank">
+                                <img src="images/revised_wireframes_1_of_3.png" width="100%"></a> <br>
+
+                            <a href="images/revised_wireframes_2_of_3.png" target="_blank">
+                                <img src="images/revised_wireframes_2_of_3.png" target="_blank" width="100%"></a><br>
+                            <a href="images/revised_wireframes_3_of_3.png" target="_blank">
+                                <img src="images/revised_wireframes_3_of_3.png" target="_blank" width="100%"></a>
+
+
+
 
 
                         </div>
-                        <div class="one columns"><br></div>
-
-                    </div>
-                </div>
+                        <br><br>
 
 
+                        <div id="visual">
+                            <h6 class="section-head">Visual Design Phase</h6>
 
-                <div class="row" style="margin-top:10%">
-                    <div class="one columns"><br></div>
-                    <div class="ten columns">
-
-                        <div id="final">
-                            <div class="center" style="margin-top: 5%">
-                                <h5 style="color: #77B6EB">Final Design</h5>
-                            </div>
-                            <h6 class="section-head">Solution</h6>
-                            <p>Wow, you made it to the end of the case study. Hopefully you liked it. Play the videos below to check out the final designs and interactions.</p>
-                            <div class="row center">
-                                <div class="one-half column">
-                                    <h5>Onboarding</h5>
-                                    <p></p>
-
-                                    <video controls="controls" width="100%" name="Onboarding" src="videos/FINAL/FINAL_Onboard.mov"></video>
-                                </div>
-                                <div class="one-half column">
-                                    <h5>Discover Chatbot</h5>
-                                    <p></p>
-                                    <video controls="controls" width="100%" name="Chatbot" src="videos/FINAL/FINAL_Chatbot.mov"></video>
-                                </div>
-                            </div>
-                            <br><br>
-                            <div class="row center">
-                                <div class="one-half column">
-                                    <h5>Cards</h5>
-                                    <p></p>
-                                    <video controls="controls" width="100%" name="Cards" src="videos/FINAL/FINAL_Cards.mov"></video>
-
-
-                                </div>
-                                <div class="one-half column">
-
-                                    <h5>Tracking Records</h5>
-                                    <p></p>
-                                    <video controls="controls" width="100%" name="Records" src="videos/FINAL/FINAL_records.mov"></video>
-                                </div>
-                            </div>
+                            <h5>Branding and Style</h5>
+                            <p>Starting with pencil and pad, I iterated on many ideas for Unbreakable. It began with the “Unbreakable” text with distress markings streaking throughout the letters. In an attempt to become more abstract but push the concept that all records are meant to be broken, I landed on a single slash between “Un” and ‘Breakable” with a color change between the prefix and the word. In grayscale and at smaller sizes, the white “Breakable” text is much more dominant and visible, adding to the notion and tone of the product.</p>
+                            <p> Pulling away from the literal and into the abstract allows the brand to speak for itself without losing the brand’s density.</p>
 
                             <br><br>
 
                             <div class="row center">
-
-                                <div class="one-half column">
-
-                                    <h5>News Feed</h5>
-                                    <p></p>
-                                    <video controls="controls" width="100%" name="News Feed" src="videos/FINAL/FINAL_FEED.mov"></video>
-
-                                </div>
-                                <div class="one-half column">
-                                    <h5>Scores</h5>
-                                    <p></p>
-                                    <video controls="controls" width="100%" name="Scores" src="videos/FINAL/FINAL_Scores.mov"></video>
+                                <div class="twelve columns">
+                                    <h5 class="visual-header">Logo Design</h5>
                                 </div>
                             </div>
+
+                            <img src="images/logo_style.png" width="100%">
+
+                            <br><br>
+
+
+                            <p>When building the visual style for Unbreakable, I wanted to convey a playfulness but also maintain a clean design. The sea-green and bright red colors allow for a less serious and fun tone, while the typefaces - Montserrat for headers and Work Sans for body - are robust.</p>
+                            <p>
+                                The sans-serif typefaces with high x-heights are particularly important, because for a mobile app with densely packed information, legibility and readability are the highest priority. Additionally, in an effort to not sacrifice too much character in the name of readability, Montserrat for headers has an additional quirkiness where the content has flexibility and life.
+                            </p>
+
+                            <br><br>
+                            <div class="row center">
+                                <div class="twelve columns">
+                                    <h5 class="visual-header">Style Tile</h5>
+                                </div>
+                            </div>
+                            <br>
+
+                            <img src="images/styletile.png" width="100%">
+
+                            <a href="https://projects.invisionapp.com/boards/J336PSAMT4XSW/" target="_blank">
+                                <h6 class="caption center">Additional: check out the moodboard I created in Invision.</h6>
+                            </a>
 
                             <br>
-                        </div>
-                    </div>
-                    <div class="one columns"><br></div>
+                            <br>
+                            <h5>Hi-Fi Mockups</h5>
+                            <p>I mocked up my artboards using Sketch. The early iterations were good, but needed to be punched up a little bit. See the example below:</p>
+                            <br><br>
+                            <div class="row center">
+                                <div class="twelve columns">
+                                    <h5 class="visual-header">Records Artboard Revisions</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <a href="images/records.png" target="_blank">
+                                <img src="images/records.png" target="_blank" width="100%"></a>
+                            <br><br>
+                            <p> I applied the changes made here across the entire visual system. A lot of time was spent ensuring a consistency throughout the entire product.</p>
 
+                            <br><br>
+
+
+
+                            <div class="row center">
+                                <div class="twelve columns">
+                                    <h5 class="visual-header">Hi-Fi: Onboarding</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <a href="images/onboard_mock.png" target="_blank">
+                                <img src="images/onboard_mock.png" target="_blank" width="100%"></a>
+                            <br><br>
+
+
+
+
+                            <div class="row center">
+                                <div class="twelve columns">
+                                    <h5 class="visual-header">Hi-Fi: Sign Up</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <a href="images/signup_mock.png" target="_blank">
+                                <img src="images/signup_mock.png" target="_blank" width="100%"></a>
+                            <br><br>
+
+
+
+
+
+                            <div class="row center">
+                                <div class="twelve columns">
+                                    <h5 class="visual-header">Hi-Fi: Cards</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <a href="images/cards_mock.png" target="_blank">
+                                <img src="images/cards_mock.png" target="_blank" width="100%"></a>
+                            <br><br>
+
+
+
+                            <div class="row center">
+                                <div class="twelve columns">
+                                    <h5 class="visual-header">Hi-Fi: Records</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <a href="images/records_mock.png" target="_blank">
+                                <img src="images/records_mock.png" target="_blank" width="100%"></a>
+                            <br><br>
+
+                            <div class="row center">
+                                <div class="twelve columns">
+                                    <h5 class="visual-header">Hi-Fi: Chatbot</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <a href="images/chatbot_mock.png" target="_blank">
+                                <img src="images/chatbot_mock.png" target="_blank" width="100%"></a>
+                            <br><br>
+
+                            <div class="row center">
+                                <div class="twelve columns">
+                                    <h5 class="visual-header">Hi-Fi: Feed & Scores</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <a href="images/feed_scores_mock.png" target="_blank">
+                                <img src="images/feed_scores_mock.png" target="_blank" width="100%"></a>
+                            <br><br>
+
+
+
+                        </div>
+                        <br><br>
+
+                        <div id="prototype">
+                            <h6 class="section-head">Prototyping Phase</h6>
+                            <h5>Interactions</h5>
+                            <p>I created my prototype using Flinto. I was not only able to create unique transitions between screens and views, but able to provide the needed interaction design to the signature items and features of the app: data cards, </p>
+
+
+                            <br>
+
+                            <div class="row center">
+                                <div class="twelve columns">
+                                    <h5 class="visual-header">Interactions</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="one-third column">
+                                    <h5 class="visual-header center">Card Flip</h5>
+
+                                    <a href="videos/card_flip_iso.gif" target="_blank">
+                                        <img src="videos/card_flip_iso.gif" target="_blank" width="100%"></a>
+                                </div>
+                                <div class="one-third column">
+                                    <h5 class="visual-header center" style="margin-bottom: 25%">Chatbot</h5>
+
+                                    <a href="videos/chatbot_interact.gif" target="_blank">
+                                        <img src="videos/chatbot_interact.gif" target="_blank" width="100%"></a>
+                                </div>
+                                <div class="one-third column">
+                                    <h5 class="visual-header center">Expand Records Cards</h5>
+
+                                    <a href="videos/record_expand.gif" target="_blank">
+                                        <img src="videos/record_expand.gif" target="_blank" width="100%"></a>
+                                </div>
+                            </div>
+                            <br><br>
+
+
+
+
+                            <br>
+                            <h5>Additional User Testing</h5>
+
+                            <p>
+                                After a few sets of user tests I was able to revise a couple key sections:
+                                <br><br> Creating a sub-system of colors to exclusively appear in the records and data cards increased consistency across the entire app. Users can clearly identify when they’re looking at an interactive data-item
+                                <br><br> Chunking information is also extremely important, especially in the expanded data card view where a lot of info is packed in closely together. By using lighter and unique lines to separate sections and adding more breathing room to the sections, users can focus on large quantities of chunked information without feeling overwhelmed.
+                                <br><br> Improving the chatbot experience became apparent when, during testing, users weren’t sure how to have a conversation with the chatbot (when to answer, ask questions, etc.). This was less to do with the content in the thread and more about the prototype's job to guide users through a sample interaction with the chatbot. By allowing more tips and tutorial-style responses as well as the ability to review the entire thread after the initial conversation, users could now understand the different types of chatbot related events can occur in the full version.
+                            </p>
+                        </div>
+
+                        <br><br>
+                        <div id="reflections">
+                            <h6 class="section-head">Reflections</h6>
+
+                            <h5>Key Learnings</h5>
+                            <p>Creating and revising Unbreakable from concept to prototype was an intense and rewarding experience. While I consider myself a better designer in many areas after this project, here is a short list of my most significant reflections:
+                            </p><br>
+                            <p>
+                                1. Iterative branding process. Don’t be so quick to jump from paper to screen. If the branding system isn’t finished, keep sketching.
+                            </p><br>
+                            <p>
+                                2. Take the space to tell the user about your products. Onboarding screens and tutorials can often go overlooked when creating the product itself; however, user testing proved that your customer won’t revisit your app unless they know exactly what they’re signing up for. Expanding the video clips in the onboarding section and adding more tutorial content to the chatbot thread during the wireframing and visual design phases proved to be fruitful when evaluating conversion rates.
+                            </p><br>
+                            <p>
+                                3a. MVP. Don’t overlook necessary features that aren’t unique to your app. Understanding through research that user’s aren’t likely to use another sports app unless it include updates on their favorite teams, a news feed, and scores & schedules was imperative to discover early in the discovery phase.
+                            </p><br>
+                            <p>
+                                3b. Do you have a product or really just a feature? Initial concepts only included a chatbot for records and data cards; however, they did not include favorites tracking, scores, and general sports news (non-data-driven). An app without those features (although simpler) would not have made it into a mainstream sports user's daily active rotation of apps.
+                            </p><br>
+                            <p>
+                                4. Consistency, consistency, consistency. Making sure every type of item’s design and interaction is consistent across the entire app.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="one columns"><br></div>
+                </div>
+            </div>
+
+
+
+            <div class="row" style="margin-top:10%">
+                <div class="one columns"><br></div>
+                <div class="ten columns">
+
+                    <div id="final">
+                        <div class="center" style="margin-top: 5%">
+                            <h5 style="color: #77B6EB">Final Design</h5>
+                        </div>
+                        <h6 class="section-head">Solution</h6>
+                        <p>Wow, you made it to the end of the case study. Hopefully you liked it. Play the videos below to check out the final designs and interactions.</p>
+                        <div class="row center">
+                            <div class="one-half column">
+                                <h5>Onboarding</h5>
+                                <p></p>
+
+                                <video controls="controls" width="100%" name="Onboarding" src="videos/FINAL/FINAL_Onboard.mov"></video>
+                            </div>
+                            <div class="one-half column">
+                                <h5>Discover Chatbot</h5>
+                                <p></p>
+                                <video controls="controls" width="100%" name="Chatbot" src="videos/FINAL/FINAL_Chatbot.mov"></video>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="row center">
+                            <div class="one-half column">
+                                <h5>Cards</h5>
+                                <p></p>
+                                <video controls="controls" width="100%" name="Cards" src="videos/FINAL/FINAL_Cards.mov"></video>
+
+
+                            </div>
+                            <div class="one-half column">
+
+                                <h5>Tracking Records</h5>
+                                <p></p>
+                                <video controls="controls" width="100%" name="Records" src="videos/FINAL/FINAL_records.mov"></video>
+                            </div>
+                        </div>
+
+                        <br><br>
+
+                        <div class="row center">
+
+                            <div class="one-half column">
+
+                                <h5>News Feed</h5>
+                                <p></p>
+                                <video controls="controls" width="100%" name="News Feed" src="videos/FINAL/FINAL_FEED.mov"></video>
+
+                            </div>
+                            <div class="one-half column">
+                                <h5>Scores</h5>
+                                <p></p>
+                                <video controls="controls" width="100%" name="Scores" src="videos/FINAL/FINAL_Scores.mov"></video>
+                            </div>
+                        </div>
+
+                        <br>
+                    </div>
                 </div>
 
+
+
+                <div class="one columns"><br></div>
             </div>
         </div>
+    </div>
 
-        <!-- Reach Out
+
+    <!-- Reach Out
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-        <div class="foot">
-            <div class="container" style="margin-top: 0%">
-                <div class="row">
-                    <div class="one columns"><br></div>
-                    <div class="ten columns">
-                        <div class="space"><br><br><br></div>
-                        <!--
+    <div class="foot">
+        <div class="container" style="margin-top: 0%">
+            <div class="row">
+                <div class="one columns"><br></div>
+                <div class="ten columns">
+                    <div class="space"><br><br><br></div>
+                    <!--
                     <h5 class="line">Artifacts</h5>
                     <div class="row" style="margin-top: %">
                         <div class="nine columns">
@@ -882,40 +884,40 @@
                     </div>
 -->
 
-                        <div class="row" style="margin-left: 0%">
-                            <div class="twelve columns" style="margin-top: -2.5%">
-                                <h6 class="line"><br></h6>
-                            </div>
+                    <div class="row" style="margin-left: 0%">
+                        <div class="twelve columns" style="margin-top: -2.5%">
+                            <h6 class="line"><br></h6>
                         </div>
                     </div>
                 </div>
-
-
-                <!-- Footer
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                <div class="row" style="margin-top: 0%">
-                    <div class="one columns"><br></div>
-
-
-                    <div class="four columns">
-                        <h6><a href="index.html">HOME</a></h6>
-                    </div>
-                    <div class="four columns">
-                        <h6><a href="business.html">NEXT PROJECT</a></h6>
-                    </div>
-                    <div class="three columns">
-                        <h6><a href="#page-top">BACK TO TOP</a></h6>
-                    </div>
-                    <div class="one columns"><br></div>
-
-                </div>
-                <div style="margin-bottom: 5%"><br></div>
             </div>
-            <div class="one columns"><br></div>
 
+
+            <!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <div class="row" style="margin-top: 0%">
+                <div class="one columns"><br></div>
+
+
+                <div class="four columns">
+                    <h6><a href="index.html">HOME</a></h6>
+                </div>
+                <div class="four columns">
+                    <h6><a href="business.html">NEXT PROJECT</a></h6>
+                </div>
+                <div class="three columns">
+                    <h6><a href="#page-top">BACK TO TOP</a></h6>
+                </div>
+                <div class="one columns"><br></div>
+
+            </div>
+            <div style="margin-bottom: 5%"><br></div>
         </div>
+        <div class="one columns"><br></div>
 
-        <!-- End Document
+    </div>
+
+    <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 
