@@ -1,3 +1,10 @@
+/* CSS Overrides for all Case Study & Work Pages
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+
+/* Container
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
 .container {
     width: 85%;
 }
@@ -19,6 +26,10 @@
         width: 63%;
     }
 }
+
+
+/* Content
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 .hero-pic {
     background-size: 100%;
@@ -42,29 +53,18 @@ header {
 
 .nav-up {
     top: -131px;
-    
-/*    91*/
 }
 
-.nav-break { 
-/*     display: block;*/
-/*    height: 1px;*/
-/*    border: 0;*/
-        border-top: 1px solid rgba(0, 0, 0, .2);
-/*    border-bottom: 1px solid rgba(0, 0, 0, .2);*/
-
-/*    border-top: 1px solid ;*/
-/*    align-content: center;*/
-/*    padding: 0;*/
+.nav-break {
+    border-top: 1px solid rgba(0, 0, 0, .2);
     width: 100%;
     margin-top: auto;
 }
 
 .toper {
-            border-top: 1px solid rgba(0, 0, 0, .2);
-
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    margin-top: -2.5px;
 }
-
 
 .social {
     color: white;
@@ -83,7 +83,6 @@ header {
 }
 
 strike {
-    /*    font-weight: 300;*/
     font-style: italic;
     color: #979797;
 }
@@ -105,10 +104,8 @@ strike {
 }
 
 span {
-    width: 80px;
-    /*        background-color:#fff; */
-    /*        border-right:solid 1px rgb(220,220,220);*/
-    padding: 0 7.5%;
+    width: 100px;
+    padding: 0 4%;
 }
 
 span.stick {
@@ -131,7 +128,6 @@ span li {}
 }
 
 span li a {
-    /*    color:rgb(50,50,50);*/
     font-weight: 400;
     font-family: raleway;
 }
@@ -159,10 +155,10 @@ a.span-active {
 }
 
 
-/* Media Queries */
+/* Media Queries
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 @media (min-width: 550px) {
-
     hr.vertical {
         width: 2.5px;
         height: 760px;
@@ -175,20 +171,20 @@ a.span-active {
 }
 
 @media (min-width: 750px) {
-        header {
+    header {
         height: 60px;
     }
     .nav-up {
         top: -61px;
-    } 
-
+    }
     #sidebar {
         display: inherit;
     }
     .break {
         display: inherit;
     }
-    .top, .toper {
+    .top,
+    .toper {
         display: none;
     }
 }

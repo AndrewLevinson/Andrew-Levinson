@@ -32,7 +32,7 @@
 .container {
     position: relative;
     width: 100%;
-    max-width: 960px;
+    max-width: 930px;
     /* Default max-width 960px
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
     margin: 0 auto;
@@ -673,8 +673,6 @@ nav {
     margin-top: 2%;
 }
 
-
-
 .line {
     border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
@@ -696,7 +694,6 @@ nav {
     transition: width 1.25s, height 1.25s, background-color 1.25s, transform 1.25s;
 }
 
-
 .project2 {
     align-content: center;
     content: url('../images/business/consulting.png');
@@ -704,7 +701,6 @@ nav {
     -webkit-transition: width 1.25s, height 1.25s, background-color 1.25s, -webkit-transform 1.25s;
     transition: width 1.25s, height 1.25s, background-color 1.25s, transform 1.25s;
 }
-
 
 .project3 {
     align-content: center;
@@ -714,19 +710,18 @@ nav {
     transition: width 1.25s, height 1.25s, background-color 1.25s, transform 1.25s;
 }
 
-.project1:hover, .project2:hover, .project3:hover {
+.project1:hover,
+.project2:hover,
+.project3:hover {
     width: 100%;
 }
-
 
 .panel {
     max-width: 10000px;
 }
 
-
-
-.line-break { 
-     display: block;
+.line-break {
+    display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid #77B6EB;
@@ -735,15 +730,23 @@ nav {
     width: 75px;
 }
 
-
 .flickr {
     display: none;
 }
 
 .film {
-        border-bottom: 1px solid #979797;
-
+    border-bottom: 1px solid #979797;
 }
+
+
+/*
+   .top-nav-indent-left {  
+        margin-left: 5%; 
+    }
+  .top-nav-indent-right {   
+        margin-right: -5%;
+    }
+*/
 
 
 
@@ -809,10 +812,15 @@ there.
 
 /* Larger than mobile */
 
-@media (min-width: 400px) {
+@media (min-width: 401px) {
     .flickr {
-    display: inherit;
-}
+        display: inherit;
+    }
+    .about-pic {
+        max-width: 225px;
+    }
+ 
+    
     
 }
 
@@ -820,14 +828,12 @@ there.
 /* Larger than phablet (also point when grid becomes active) */
 
 @media (min-width: 550px) {
-/*
-    .header,
-    .about-me {
-        margin-left: 12.5%; 
-    }
-*/
     .social {
         text-align: center;
+    }
+    .about-pic {
+        max-width: none;
+        width: 100%;
     }
 }
 
@@ -835,11 +841,12 @@ there.
 /* Larger than tablet */
 
 @media (min-width: 750px) {
-      .break {
+    .break {
         display: inherit;
     }
-    
-    
+    .about-pic {
+        max-width: 225px;
+    }
 }
 
 
