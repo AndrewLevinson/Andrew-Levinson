@@ -32,7 +32,7 @@
 .container {
     position: relative;
     width: 100%;
-    max-width: 960px;
+/*    max-width: 960px;*/
     /* Default max-width 960px
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
     margin: 0 auto;
@@ -725,6 +725,28 @@ nav {
 
 
 
+.line-break { 
+     display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #979;
+    align-content: center;
+    padding: 0;
+    width: 75px;
+}
+
+
+.flickr {
+    display: none;
+}
+
+.film {
+        border-bottom: 1px solid #979797;
+
+}
+
+
+
 /* Accordion
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -787,16 +809,23 @@ there.
 
 /* Larger than mobile */
 
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+    .flickr {
+    display: inherit;
+}
+    
+}
 
 
 /* Larger than phablet (also point when grid becomes active) */
 
 @media (min-width: 550px) {
+/*
     .header,
     .about-me {
-        margin-left: 12.5%;
+        margin-left: 12.5%; 
     }
+*/
     .social {
         text-align: center;
     }
@@ -805,7 +834,13 @@ there.
 
 /* Larger than tablet */
 
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+      .break {
+        display: inherit;
+    }
+    
+    
+}
 
 
 /* Larger than desktop */

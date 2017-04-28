@@ -31,7 +31,7 @@
 header {
     background: #fff;
     background-color: #fff;
-    height: 90px;
+    height: 130px;
     position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
@@ -41,8 +41,30 @@ header {
 }
 
 .nav-up {
-    top: -91px;
+    top: -131px;
+    
+/*    91*/
 }
+
+.nav-break { 
+/*     display: block;*/
+/*    height: 1px;*/
+/*    border: 0;*/
+        border-top: 1px solid rgba(0, 0, 0, .2);
+/*    border-bottom: 1px solid rgba(0, 0, 0, .2);*/
+
+/*    border-top: 1px solid ;*/
+/*    align-content: center;*/
+/*    padding: 0;*/
+    width: 100%;
+    margin-top: auto;
+}
+
+.toper {
+            border-top: 1px solid rgba(0, 0, 0, .2);
+
+}
+
 
 .social {
     color: white;
@@ -166,7 +188,7 @@ a.span-active {
     .break {
         display: inherit;
     }
-    .top {
+    .top, .toper {
         display: none;
     }
 }
