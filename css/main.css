@@ -32,7 +32,7 @@
 .container {
     position: relative;
     width: 100%;
-/*    max-width: 960px;*/
+    max-width: 960px;
     /* Default max-width 960px
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
     margin: 0 auto;
@@ -65,7 +65,7 @@
         padding: 0;
     }
     .container-nav {
-        width: 85%;
+        width: 100%;
         padding: 0;
     }
 }
@@ -78,7 +78,7 @@
         width: 85%;
     }
     .container-nav {
-        width: 85%;
+        width: 100%;
     }
     .column,
     .columns {
