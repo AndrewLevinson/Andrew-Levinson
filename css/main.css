@@ -689,7 +689,7 @@ nav {
 .project1 {
     align-content: center;
     content: url('../images/UNBREAKABLEBanner_small.png');
-    width: 92.5%;
+    width: 100%;
     -webkit-transition: width 1.25s, height 1.25s, background-color 1.25s, -webkit-transform 1.25s;
     transition: width 1.25s, height 1.25s, background-color 1.25s, transform 1.25s;
 }
@@ -697,7 +697,7 @@ nav {
 .project2 {
     align-content: center;
     content: url('../images/business/consulting.png');
-    width: 92.5%;
+    width: 100%;
     -webkit-transition: width 1.25s, height 1.25s, background-color 1.25s, -webkit-transform 1.25s;
     transition: width 1.25s, height 1.25s, background-color 1.25s, transform 1.25s;
 }
@@ -705,7 +705,7 @@ nav {
 .project3 {
     align-content: center;
     content: url('../images/MONSTERSBanner.png');
-    width: 92.5%;
+    width: 100%;
     -webkit-transition: width 1.25s, height 1.25s, background-color 1.25s, -webkit-transform 1.25s;
     transition: width 1.25s, height 1.25s, background-color 1.25s, transform 1.25s;
 }
@@ -713,7 +713,7 @@ nav {
 .project1:hover,
 .project2:hover,
 .project3:hover {
-    width: 100%;
+    width: 92.5%;
 }
 
 .panel {
