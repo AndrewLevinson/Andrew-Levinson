@@ -832,7 +832,7 @@ there.
         margin-left: 5%; 
     }
   .top-nav-indent-right {   
-        margin-right: -5%;
+        margin-right: 5%;
     }
 }
 
