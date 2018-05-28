@@ -1,190 +1,204 @@
 /* CSS Overrides for all Case Study & Work Pages
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-
 /* Container
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 .container {
-    width: 85%;
+  width: 85%;
 }
 
 @media (min-width: 550px) {
-    .container {
-        width: 80%;
-    }
-    header {
-        height: 60px;
-    }
-    .nav-up {
-        top: -61px;
-    }
+  .container {
+    width: 80%;
+  }
+  header {
+    height: 60px;
+  }
+  .nav-up {
+    top: -61px;
+  }
 }
 
 @media (min-width: 750px) {
-    .container {
-        width: 63%;
-    }
+  .container {
+    width: 80%;
+    max-width: 930px;
+  }
 }
-
 
 /* Content
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 .hero-pic {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    text-align: center;
-    z-index: 350;
-    color: #fff;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  z-index: 350;
+  color: #fff;
 }
 
 header {
-    background: #fff;
-    background-color: #fff;
-    height: 130px;
-    position: fixed;
-    top: 0;
-    transition: top 0.2s ease-in-out;
-    width: 100%;
-    z-index: 200;
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
+  background: #fff;
+  background-color: #fff;
+  height: 130px;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  z-index: 200;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .nav-up {
-    top: -131px;
+  top: -131px;
+}
+
+.nav-down {
+  opacity: 0;
+  transform: translateY(-60px);
+  transition: all 0.4s;
+}
+
+.nav-down.active {
+  opacity: 1;
+  transform: translateY(0%);
 }
 
 .nav-break {
-    border-top: 1px solid rgba(0, 0, 0, .2);
-    width: 100%;
-    margin-top: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-top: auto;
 }
 
 .toper {
-    border-top: 1px solid rgba(0, 0, 0, .2);
-    margin-top: -2.5px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: -2.5px;
+}
+
+/*Sidebar code*/
+#sidebar {
+  display: none;
+  float: left;
+  z-index: 1;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.4s ease-in-out;
+}
+#sidebar.active {
+  opacity: 1;
+  transform: translateX(0%);
 }
 
 .social {
-    color: white;
-    background: #fff;
-    background-color: white;
+  color: white;
+  background: #fff;
+  background-color: white;
 }
 
 .foot {
-    background-color: #fff;
-    z-index: 500;
+  background-color: #fff;
+  z-index: 500;
 }
 
 .section-head {
-    color: #979797;
-    font-weight: 500;
+  color: #979797;
+  font-weight: 500;
 }
 
 strike {
-    font-style: italic;
-    color: #979797;
-}
-
-
-/*Sidebar code*/
-
-#sidebar {
-    width: 0%;
-    float: left;
-    z-index: 1;
-    display: none;
+  font-style: italic;
+  color: #979797;
 }
 
 #content-id {
-    width: 724px;
-    float: right;
-    padding-left: 24px;
+  width: 724px;
+  float: right;
+  padding-left: 24px;
 }
 
 span {
-    width: 100px;
-    padding: 0 4%;
+  width: 100px;
+  padding: 0 4%;
 }
 
 span.stick {
-    position: fixed;
-    top: 0;
-    z-index: 10000;
-    margin-top: 160px;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  margin-top: 160px;
 }
 
 span ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-span li {}
+/* span li {} */
 
 .process {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 span li a {
-    font-weight: 400;
-    font-family: raleway;
+  font-weight: 400;
+  font-family: raleway;
 }
 
 a.span-active {
-    color: #77B6EB;
-    font-weight: 600;
+  color: #77b6eb;
+  font-weight: 600;
 }
 
 .break {
-    display: none;
+  display: none;
 }
 
 .mvp {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .number {
-    color: #77B6EB;
+  color: #77b6eb;
 }
 
 .visual-header {
-    text-transform: uppercase;
-    font-size: 1.4rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
 }
-
 
 /* Media Queries
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 @media (min-width: 550px) {
-    hr.vertical {
-        width: 2.5px;
-        height: 760px;
-        background-color: #D5C8C8;
-        float: left;
-    }
-    .visual-header {
-        font-size: 1.9rem;
-    }
+  hr.vertical {
+    width: 2.5px;
+    height: 760px;
+    background-color: #d5c8c8;
+    float: left;
+  }
+  .visual-header {
+    font-size: 1.9rem;
+  }
 }
 
-@media (min-width: 750px) {
-    header {
-        height: 60px;
-    }
-    .nav-up {
-        top: -61px;
-    }
-    #sidebar {
-        display: inherit;
-    }
-    .break {
-        display: inherit;
-    }
-    .top,
-    .toper {
-        display: none;
-    }
+@media (min-width: 1024px) {
+  header {
+    height: 60px;
+  }
+  #sidebar {
+    display: inherit;
+    position: fixed;
+    left: 4%;
+    top: 10%;
+    max-width: 8.75%;
+  }
+  .break {
+    display: inherit;
+  }
+  .top,
+  .toper {
+    display: none;
+  }
 }
