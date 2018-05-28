@@ -78,7 +78,7 @@ for (i = 0; i < acc.length; i++) {
 
 // Nav slide down and sidebar slide out when hero image cleared
 // debounce for performance on scroll triggers
-function debounce(func, wait = 20, immediate = true) {
+function debounce(func, wait = 10, immediate = true) {
   var timeout;
   return function() {
     var context = this,
