@@ -24,16 +24,17 @@
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/casestudy.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/casestudy.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
 
 
     <!-- Google Analytics
@@ -62,7 +63,23 @@
 
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
 
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">
+                <a href="../index.html">Back</a>
+            </span>
+            <div class="box">
+                <input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" />
+                <br />
+                <button id="loginbutton" type="button">Enter</button>
+                <p id="wrongPassword" style="display: none">wrong password</p>
+            </div>
+        </div>
+
+    </div>
 
     <!-- Nav Bar
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -72,12 +89,12 @@
         <div class="container-nav">
             <div class="row" style="margin-top: 20px">
                 <div class="ten columns">
-                    <a href="index.html">
-                        <img src="images/logo@2x.png " alt="andrew_l" width="160" class="top-nav-indent-left" />
+                    <a href="../index.html">
+                        <img src="../images/logo@2x.png " alt="andrew_l" width="160" class="top-nav-indent-left" />
                     </a>
                 </div>
                 <div class="two columns" style="margin-top: 5px">
-                    <a href="unbreakable.html" class="nav" class="top-nav-indent-right">Next</a>
+                    <a href="../unbreakable.html" class="nav" class="top-nav-indent-right">Next</a>
                 </div>
             </div>
 
@@ -125,7 +142,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <div class="hero-pic" id="page-top">
-        <img src="images/monsters_live_hero.png" width="100%">
+        <img src="../images/monsters_live_hero.png" width="100%">
     </div>
 
 
@@ -143,29 +160,21 @@
                     <div id="overview" style="margin-top: 5%">
 
                         <div class="center">
-                            <h5 style="color: #77B6EB">MONSTERS | Metal Band</h5>
+                            <h5 style="color: #77B6EB">Event Technologies ERP | Product Design Case Study</h5>
                         </div>
 
-                        <p>Throughout my entire life, music has been a passion of mine. I've been in plenty of bands from pop-punk
-                            to death metal, but my professional endeavor into music came with my band, MONSTERS. As a "deathcore"
-                            band from Chicago which I co-founded in 2008, we toured for 2+ years across the entire US and
-                            Canada, put out two albums and were represented by an indie label, management company, and a
-                            booking agency. </p>
-                        <br> I'm really proud of my work here from writing and recording most of our music, to running the bands
-                        logistics and merchandising, and of course performing live every night on guitar. I had a major part
-                        in all aspects of running a successful band.
-                        <br>
-                        <br> Depending on who you are, the music PROBABLY is not for you...but I encourage you to check out some
-                        tracks below. Enjoy!
-                        <br>
-                        <br>
-                    </div>
-                    <div id="music" style="margin-top: 5%">
+                        <p>Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text
+                            goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text
+                            goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text
+                            goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text
+                            goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text
+                            goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text
+                            goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text
+                            goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text goes here. Text
+                            goes here. Text goes here. Text goes here. </p>
 
-                        <br>
-                        <iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A5BYcVtabMy7tNii9fHcklK" width="100%" height="480" frameborder="0"
-                            allowtransparency="true"></iframe>
                     </div>
+
                 </div>
                 <div class="one columns break">
                     <br>
@@ -246,12 +255,12 @@
 
                 <div class="four columns">
                     <h6>
-                        <a href="index.html">HOME</a>
+                        <a href="../index.html">HOME</a>
                     </h6>
                 </div>
                 <div class="four columns">
                     <h6>
-                        <a href="unbreakable.html">NEXT PROJECT</a>
+                        <a href="../unbreakable.html">NEXT PROJECT</a>
                     </h6>
                 </div>
                 <div class="three columns">
@@ -284,5 +293,5 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
-<script type="text/javascript" src="projects.js"></script>
+<script type="text/javascript" src="../script.js"></script>
+<script type="text/javascript" src="../projects.js"></script>

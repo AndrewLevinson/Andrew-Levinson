@@ -694,9 +694,19 @@ nav {
   transition: width 1.25s, height 1.25s, background-color 1.25s, transform 1.25s;
 }
 
+.project4 {
+  align-content: center;
+  content: "COMING SOON";
+  width: 100%;
+  -webkit-transition: width 1.25s, height 1.25s, background-color 1.25s,
+    -webkit-transform 1.25s;
+  transition: width 1.25s, height 1.25s, background-color 1.25s, transform 1.25s;
+}
+
 .project1:hover,
 .project2:hover,
-.project3:hover {
+.project3:hover,
+.project4:hover {
   width: 92.5%;
 }
 
