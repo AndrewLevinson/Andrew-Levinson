@@ -70,7 +70,7 @@
             <span class="close">&times;</span>
             <h4>Enter password to continue</h4>
             <p>This case study contains confidential client information.</p>
-            <input id="password" type="password" placeholder="password" />
+            <input id="password" type="password" placeholder=" enter password" />
             <button id="loginbutton" type="button">View case study</button>
 
             <h6>Want a password?
@@ -162,20 +162,18 @@
                     <div class="panel" id="design" style="max-height:1000px">
                         <p>Prior to my current design job, I attended an immersive full-time 6-month designer bootcamp where
                             I've designed, prototyped, & developed some passion projects.</p>
-
-
                         <h6>Featured Case Study:
                             <a href="unbreakable.html" style="font-weight:600">UNBREAKABLE</a>
                         </h6>
-
                         <a href="unbreakable.html" class="project1">
                         </a>
-                        <!-- <h6>Additional Case Study:
-                            <a id="myBtn" style="font-weight:600">Event Technology Project</a>
-                        </h6> -->
-
-                        <!-- <a href="/7f550a9f4c44173a37664d938f1355f0f92a47a7/eventtech.html" class="project4">
-                        </a> -->
+                        <br>
+                        <br>
+                        <h6>Additional Case Study:
+                            <a class="myBtn" style="font-weight:600">Event Technology Project</a>
+                        </h6>
+                        <div class="myBtn project4">
+                        </div>
                         <br>
                         <br>
                     </div>
@@ -431,18 +429,21 @@
     "use strict";
 
     // Get the modal
-    var modal = document.getElementById('myModal');
+    const modal = document.getElementById('myModal');
 
     // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+    const btn = document.querySelectorAll('.myBtn');
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    const span = document.querySelector('.close');
+
 
     // When the user clicks on the button, open the modal 
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
+    btn.forEach(button => button.addEventListener('click', function () {
+        btn.forEach(button => {
+            modal.style.display = "block";
+        });
+    }));
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {

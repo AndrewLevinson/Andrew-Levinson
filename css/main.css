@@ -301,6 +301,7 @@ h6 {
 a {
   color: #31343c;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -696,7 +697,8 @@ nav {
 
 .project4 {
   align-content: center;
-  content: "COMING SOON";
+  cursor: pointer;
+  content: url("../images/EventTechBanner_small.png");
   width: 100%;
   -webkit-transition: width 1.25s, height 1.25s, background-color 1.25s,
     -webkit-transform 1.25s;
@@ -707,7 +709,7 @@ nav {
 .project2:hover,
 .project3:hover,
 .project4:hover {
-  width: 92.5%;
+  width: 95%;
 }
 
 .panel {
