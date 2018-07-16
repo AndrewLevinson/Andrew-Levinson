@@ -21,13 +21,34 @@ $(document).ready(function() {
           window.location.hash = hash;
         }
       );
-    } // End if
+    }
   });
 });
 // End jQuery
 
 // Accordion Menu on homepage
-var acc = document.getElementsByClassName("accordion");
+const design = document.getElementById("design");
+const music = document.getElementById("music");
+const finance = document.getElementById("finance");
+const writing = document.getElementById("writing");
+const photo = document.getElementById("photo");
+const acc = document.getElementsByClassName("accordion");
+
+// open from bio paragraph
+function trigger(e) {
+  const activated = e.parentNode.classList.add("active");
+  activated;
+  var panel = e.parentNode.nextElementSibling;
+  if (activated) {
+    // do nothing since panel is already open
+  } else {
+    setTimeout(function() {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }, 800);
+  }
+}
+
+// open by clicking directly on accordion section
 var i;
 for (i = 0; i < acc.length; i++) {
   acc[i].onclick = function openUp() {
