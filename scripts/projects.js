@@ -2,22 +2,22 @@
 
 // highlight current section blue in case studies
 $(document).ready(function() {
-  var aChildren = $("span li").children(); // find the a children of the list items
-  var aArray = []; // create the empty aArray
+  var aChildren = $("span li").children();
+  var aArray = [];
   for (var i = 0; i < aChildren.length; i++) {
     var aChild = aChildren[i];
     var ahref = $(aChild).attr("href");
     aArray.push(ahref);
-  } // this for loop fills the aArray with attribute href values
+  }
   $(window).scroll(function() {
-    var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
-    var windowHeight = $(window).height(); // get the height of the window
+    var windowPos = $(window).scrollTop();
+    var windowHeight = $(window).height();
     var docHeight = $(document).height();
 
     for (var i = 0; i < aArray.length; i++) {
       var theID = aArray[i];
-      var divPos = $(theID).offset().top; // get the offset of the div from the top of page
-      var divHeight = $(theID).height(); // get the height of the div in question
+      var divPos = $(theID).offset().top;
+      var divHeight = $(theID).height();
       if (windowPos >= divPos && windowPos < divPos + divHeight) {
         $("a[href='" + theID + "']").addClass("span-active");
       } else {

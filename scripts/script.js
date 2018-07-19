@@ -1,15 +1,10 @@
 // jQuery used for page scroll anchoring and highlighting current section with blue underline.
-// Page Scroll anchoring thoughout entire site
+// Add smooth scrolling to all links
 $(document).ready(function() {
-  // Add smooth scrolling to all links
   $("a").on("click", function(event) {
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
       event.preventDefault();
-      // Store hash
       var hash = this.hash;
-      // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $("html, body").animate(
         {
@@ -17,7 +12,6 @@ $(document).ready(function() {
         },
         800,
         function() {
-          // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
         }
       );
@@ -32,13 +26,13 @@ const music = document.getElementById("music");
 const finance = document.getElementById("finance");
 const writing = document.getElementById("writing");
 const photo = document.getElementById("photo");
-const acc = document.getElementsByClassName("accordion");
+const acc = document.querySelectorAll(".accordion");
 
 // open from bio paragraph
 function trigger(e) {
   const activated = e.parentNode.classList.add("active");
-  activated;
   var panel = e.parentNode.nextElementSibling;
+  activated;
   if (activated) {
     // do nothing since panel is already open
   } else {
