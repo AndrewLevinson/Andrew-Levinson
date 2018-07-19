@@ -24,8 +24,7 @@ $(document).ready(function() {
 const design = document.getElementById("design");
 const music = document.getElementById("music");
 const finance = document.getElementById("finance");
-const writing = document.getElementById("writing");
-const photo = document.getElementById("photo");
+const blog = document.getElementById("blog");
 const acc = document.querySelectorAll(".accordion");
 
 // open from bio paragraph
