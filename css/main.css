@@ -68,7 +68,6 @@
 }
 
 /* For devices larger than 550px */
-
 @media (min-width: 550px) {
   .container {
     width: 85%;
@@ -471,11 +470,13 @@ label > .label-body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 ul {
-  list-style: circle inside;
+  list-style: circle outside;
+  margin-left: 1em;
 }
 
 ol {
-  list-style: decimal inside;
+  list-style: decimal outside;
+  margin-left: 1em;
 }
 
 ol,
@@ -679,7 +680,7 @@ nav {
 
 .project2 {
   align-content: center;
-  content: url("../images/business/consulting.png");
+  content: url("../images/business/consultingBanner-small.png");
   width: 100%;
   -webkit-transition: width 1.25s, height 1.25s, background-color 1.25s,
     -webkit-transform 1.25s;
@@ -704,11 +705,21 @@ nav {
     -webkit-transform 1.25s;
   transition: width 1.25s, height 1.25s, background-color 1.25s, transform 1.25s;
 }
+.project5 {
+  align-content: center;
+  cursor: pointer;
+  content: url("../images/codeBanner_small.png");
+  width: 100%;
+  -webkit-transition: width 1.25s, height 1.25s, background-color 1.25s,
+    -webkit-transform 1.25s;
+  transition: width 1.25s, height 1.25s, background-color 1.25s, transform 1.25s;
+}
 
 .project1:hover,
 .project2:hover,
 .project3:hover,
-.project4:hover {
+.project4:hover,
+.project5:hover {
   width: 95%;
 }
 
