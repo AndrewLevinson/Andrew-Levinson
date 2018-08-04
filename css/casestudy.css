@@ -157,7 +157,7 @@ a.span-active {
 
 .redacted {
   background-color: #000;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: monospace;
