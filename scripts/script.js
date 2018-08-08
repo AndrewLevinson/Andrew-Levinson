@@ -1,25 +1,3 @@
-// jQuery used for page scroll anchoring and highlighting current section with blue underline.
-// Add smooth scrolling to all links
-$(document).ready(function() {
-  $("a").on("click", function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $("html, body").animate(
-        {
-          scrollTop: $(hash).offset().top
-        },
-        800,
-        function() {
-          window.location.hash = hash;
-        }
-      );
-    }
-  });
-});
-// End jQuery
-
 // Accordion Menu on homepage
 const design = document.getElementById("design");
 const music = document.getElementById("music");
@@ -54,3 +32,25 @@ for (i = 0; i < acc.length; i++) {
     }
   };
 }
+
+// jQuery used for page scroll anchoring and highlighting current section with blue underline.
+// Add smooth scrolling to all links
+$(document).ready(function() {
+  $("a").on("click", function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top
+        },
+        800,
+        function() {
+          window.location.hash = hash;
+        }
+      );
+    }
+  });
+});
+// End jQuery
