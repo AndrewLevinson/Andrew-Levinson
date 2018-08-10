@@ -54,4 +54,15 @@ $(document).ready(function() {
     }
   });
 });
+
+$(document).ready(function() {
+  $(".your-class").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+});
+
 // End jQuery
