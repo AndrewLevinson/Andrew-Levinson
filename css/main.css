@@ -740,6 +740,7 @@ nav {
 .social {
   padding-right: 25%;
 }
+
 /* Accordion
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -805,10 +806,10 @@ button2.accordion.active:after {
 @media (min-width: 550px) {
   .social {
     text-align: center;
-    padding: initial;
+    padding: 0;
   }
   .social-wrap {
-    display: initial;
+    display: inline;
   }
 
   .about-pic {
