@@ -175,6 +175,11 @@ a.span-active {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.your-class p {
+  margin-left: 5%;
+  margin-right: 2.5%;
+}
+
 /* Media Queries
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
