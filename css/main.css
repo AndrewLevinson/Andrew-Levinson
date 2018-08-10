@@ -735,10 +735,9 @@ nav {
 
 .social-wrap {
   display: inline-flex;
-  align-content: space-between;
 }
 .social {
-  padding-right: 25%;
+  padding-right: 12.5%;
 }
 
 /* Accordion
@@ -806,7 +805,7 @@ button2.accordion.active:after {
 @media (min-width: 550px) {
   .social {
     text-align: center;
-    padding: unset;
+    padding: 0%;
   }
   .social-wrap {
     display: unset;
