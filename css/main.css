@@ -660,10 +660,6 @@ nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.screen {
-  font-family: Courier;
-}
-
 .quotes {
   font-style: italic;
   color: #979797;
@@ -737,14 +733,13 @@ nav {
   width: 75px;
 }
 
-.flickr {
-  display: none;
+.social-wrap {
+  display: inline-flex;
+  align-content: space-between;
 }
-
-.film {
-  border-bottom: 1px solid #979797;
+.social {
+  padding-right: 25%;
 }
-
 /* Accordion
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -797,19 +792,9 @@ button2.accordion.active:after {
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-
 /* Larger than mobile */
 
 @media (min-width: 401px) {
-  .flickr {
-    display: inherit;
-  }
   .about-pic {
     max-width: 225px;
   }
@@ -820,6 +805,10 @@ there.
 @media (min-width: 550px) {
   .social {
     text-align: center;
+    padding: initial;
+  }
+  .social-wrap {
+    display: initial;
   }
 
   .about-pic {
