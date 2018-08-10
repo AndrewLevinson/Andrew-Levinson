@@ -740,6 +740,10 @@ nav {
   padding-right: 12.5%;
 }
 
+.project-title {
+  line-height: 0;
+}
+
 /* Accordion
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 

@@ -70,7 +70,7 @@ $(document).ready(function() {
 
 // slick image carousel
 $(document).ready(function() {
-  $(".your-class").slick({
+  $(".carousel").slick({
     dots: true,
     infinite: true,
     speed: 300,
