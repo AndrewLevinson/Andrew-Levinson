@@ -806,10 +806,10 @@ button2.accordion.active:after {
 @media (min-width: 550px) {
   .social {
     text-align: center;
-    padding: 0;
+    padding: unset;
   }
   .social-wrap {
-    display: inline;
+    display: unset;
   }
 
   .about-pic {
