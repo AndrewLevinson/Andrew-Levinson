@@ -777,7 +777,6 @@ button2.accordion:after {
   content: "\02795";
   /* Unicode character for "plus" sign (+) */
   font-size: 13px;
-  /*    color: #777;*/
   float: right;
   margin-top: -4.5%;
   margin-right: 7%;
@@ -786,6 +785,13 @@ button2.accordion:after {
 button2.accordion.active:after {
   content: "\2796";
   /* Unicode character for "minus" sign (-) */
+}
+
+.subline {
+  /* font-family: monospace; */
+  font-size: 80%;
+  text-transform: uppercase;
+  line-height: 0.6;
 }
 
 /* Media Queries
