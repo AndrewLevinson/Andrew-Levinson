@@ -740,10 +740,6 @@ nav {
   padding-right: 12.5%;
 }
 
-.project-title {
-  line-height: 0;
-}
-
 /* Accordion
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -824,6 +820,9 @@ button2.accordion.active:after {
   }
   .top-nav-indent-right {
     margin-right: 5%;
+  }
+  .project-title {
+    line-height: 0;
   }
 }
 
