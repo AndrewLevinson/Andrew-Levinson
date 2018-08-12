@@ -26,16 +26,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/casestudy.css">
 
 
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
-
-
-
-
 
 
     <!-- Google Analytics
@@ -65,6 +62,29 @@
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h4>Enter password to continue</h4>
+            <p>The next case study contains some confidential client information</p>
+            <input id="password" type="password" placeholder=" enter password" />
+            <button id="loginbutton" type="button">View case study</button>
+
+            <h6>Want a password?
+                <a style="font-weight:600" href="mailto:andrewlevins@gmail.com">Reach out and ask!</a>
+                <br>Don't care?
+                <a style="font-weight:600" href="business.html"> you can skip this case study &#8594;</a>
+            </h6>
+
+            <p id="wrongPassword">wrong password</p>
+        </div>
+    </div>
+
     <!-- Nav Bar
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <header class="nav-down" id="hero">
@@ -76,7 +96,7 @@
                     </a>
                 </div>
                 <div class="two columns" style="margin-top: 5px">
-                    <a href="business.html" class="nav" class="top-nav-indent-right">Next</a>
+                    <a class="nav myBtn" class="top-nav-indent-right">Next</a>
                 </div>
             </div>
 
@@ -1139,8 +1159,8 @@
                 </div>
                 <div class="five columns">
                     <h6>
-                        <a href="business.html">NEXT PROJECT:
-                            <block style="font-weight: 600">Selected Consulting Projects &#8594;</block>
+                        <a class="myBtn">NEXT PROJECT:
+                            <block style="font-weight: 600">Pension Retirement App &#128274 &#8594;</block>
                         </a>
                     </h6>
                 </div>
@@ -1174,5 +1194,78 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/chrisveness/crypto/master/sha1.js"></script>
 <script type="text/javascript" src="/scripts/script.js"></script>
 <script type="text/javascript" src="/scripts/projects.js"></script>
+
+
+
+<script type="text/javascript">
+    "use strict";
+
+    // Get the modal
+    const modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    const btn = document.querySelectorAll('.myBtn');
+
+    // Get the <span> element that closes the modal
+    const span = document.querySelector('.close');
+
+
+    // When the user clicks on the button, open the modal 
+    btn.forEach(button => button.addEventListener('click', function () {
+        btn.forEach(button => {
+            // commented out until live
+            modal.style.display = "block";
+        });
+    }));
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+
+    // Credit for password protection code: https://github.com/matteobrusa/Password-protection-for-static-pages
+    function loadPage(pwd) {
+
+        var hash = pwd;
+        hash = Sha1.hash(pwd);
+        var url = hash + "/pension.html";
+
+        $.ajax({
+            url: url,
+            dataType: "html",
+            success: function (data) {
+                window.location = url;
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+
+                parent.location.hash = hash;
+                //$("#wrongPassword").show();
+                $("#password").attr("placeholder", "wrong password", ).attr('style', 'border-color:#EA4A64');
+                $("#password").val("");
+            }
+        });
+    }
+
+    $("#loginbutton").on("click", function () {
+        loadPage($("#password").val());
+    });
+    $("#password").keypress(function (e) {
+        if (e.which == 13) {
+
+            loadPage($("#password").val());
+        }
+    });
+    $("#password").focus();
+
+</script>

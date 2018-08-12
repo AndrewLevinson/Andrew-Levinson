@@ -159,7 +159,7 @@
                     <button2 class="accordion">
                         <h4 id="design">
                             <br>Digital Product Designer</h4>
-                        <p class="subline">2 Projects</p>
+                        <p class="subline">3 Projects</p>
                     </button2>
                     <div class="panel">
                         <p>Below are case studies from my client work at
@@ -172,15 +172,24 @@
                         <h6 class="project-title">Featured Client Case Study:
                             <a class="myBtn" style="font-weight:600">Event Technology ERP &#128274</a>
                         </h6>
-                        <div class="myBtn project4">
+                        <div class="myBtn project4" onclick="pageRequest('/eventtech.html');">
                         </div>
                         <br>
                         <br>
                         <h6 class="project-title">Concept Project Case Study:
                             <a href="unbreakable.html" style="font-weight:600">UNBREAKABLE</a>
                         </h6>
-                        <a href="unbreakable.html" class="project1">
-                        </a>
+                        <div>
+                            <a href="unbreakable.html" class="project1">
+                            </a>
+                        </div>
+                        <br>
+                        <br>
+                        <h6 class="project-title">Client Case Study:
+                            <a class="myBtn" style="font-weight:600">Pension Retirement Web App &#128274</a>
+                        </h6>
+                        <div class="myBtn project6" onclick="pageRequest('/pension.html');">
+                        </div>
                         <br>
                         <br>
                     </div>
@@ -379,8 +388,6 @@
 
 </html>
 
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.rawgit.com/chrisveness/crypto/master/sha1.js"></script>
 <script type="text/javascript" src="/scripts/script.js"></script>
@@ -418,14 +425,17 @@
         }
     }
 
+    // needed for multiple pages with same password
+    let page;
+    function pageRequest(pagePass) {
+        page = pagePass;
+    }
 
     // Credit for password protection code: https://github.com/matteobrusa/Password-protection-for-static-pages
     function loadPage(pwd) {
-
         var hash = pwd;
         hash = Sha1.hash(pwd);
-        var url = hash + "/eventtech.html";
-
+        var url = hash + page;
         $.ajax({
             url: url,
             dataType: "html",
