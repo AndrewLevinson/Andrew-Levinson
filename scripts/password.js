@@ -5,7 +5,7 @@ const modal = document.getElementById("myModal");
 const btn = document.querySelectorAll(".myBtn");
 
 // Get the <span> element that closes the modal
-const span = document.querySelector(".close");
+const close = document.querySelector(".close");
 
 // When the user clicks on the button, open the modal
 btn.forEach(button =>
@@ -18,7 +18,7 @@ btn.forEach(button =>
 );
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+close.onclick = function() {
   modal.style.display = "none";
 };
 
@@ -57,7 +57,7 @@ function loadPage(pwd) {
     },
     error: function(xhr, ajaxOptions, thrownError) {
       parent.location.hash = hash;
-      //$("#wrongPassword").show();
+      // $("#wrongPassword").show();
       $("#password")
         .attr("placeholder", "wrong password")
         .attr("style", "border-color:#EA4A64");

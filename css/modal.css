@@ -56,6 +56,9 @@
   width: 100%;
 }
 
+#fake {
+  display: none;
+}
 /* The Close Button */
 .close {
   color: #aaa;
