@@ -62,28 +62,27 @@
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-
-
     <!-- The Modal -->
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <h4>Enter password to continue</h4>
-            <p>The next case study contains some confidential client information</p>
-            <input id="password" type="password" placeholder=" enter password" />
-            <button id="loginbutton" type="button">View case study</button>
-
-            <h6>Want a password?
-                <a style="font-weight:600" href="mailto:andrewlevins@gmail.com">Reach out and ask!</a>
-                <br>Don't care?
-                <a style="font-weight:600" href="business.html"> you can skip this case study &#8594;</a>
-            </h6>
-
+            <block class="close">&times;</block>
+            <img src="images/lock.svg" class="center" />
+            <h4 style="font-weight: 500">Next page requires a password</h4>
+            <p>There's sensitive client stuff in there 🕵🏻‍</p>
+            <form action="">
+                <input id="password" type="text" placeholder="Password" onkeyup="success()" />
+                <button id="loginbutton" type="button" disabled>View case study &#10230;</button>
+                <button type="button" onclick="location.href='business.html';">No Password? Skip this one</button>
+            </form>
+            <p style="margin-top: -25px" class="caption">Want the password?
+                <a href="mailto:andrewlevins@gmail.com" style="font-weight: 400; text-decoration: underline">Just ask me</a>
+            </p>
             <p id="wrongPassword">wrong password</p>
         </div>
     </div>
+
 
     <!-- Nav Bar
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -96,7 +95,7 @@
                     </a>
                 </div>
                 <div class="two columns" style="margin-top: 5px">
-                    <a class="nav myBtn" class="top-nav-indent-right">Next</a>
+                    <a class="nav myBtn" class="top-nav-indent-right" onclick="pageRequest('/pension.html');">Next</a>
                 </div>
             </div>
 
@@ -1159,7 +1158,7 @@
                 </div>
                 <div class="five columns">
                     <h6>
-                        <a class="myBtn">NEXT PROJECT:
+                        <a class="myBtn" onclick="pageRequest('/pension.html');">NEXT PROJECT:
                             <block style="font-weight: 600">Pension Retirement App &#128274 &#8594;</block>
                         </a>
                     </h6>
@@ -1197,75 +1196,4 @@
 <script type="text/javascript" src="https://cdn.rawgit.com/chrisveness/crypto/master/sha1.js"></script>
 <script type="text/javascript" src="/scripts/script.js"></script>
 <script type="text/javascript" src="/scripts/projects.js"></script>
-
-
-
-<script type="text/javascript">
-    "use strict";
-
-    // Get the modal
-    const modal = document.getElementById('myModal');
-
-    // Get the button that opens the modal
-    const btn = document.querySelectorAll('.myBtn');
-
-    // Get the <span> element that closes the modal
-    const span = document.querySelector('.close');
-
-
-    // When the user clicks on the button, open the modal 
-    btn.forEach(button => button.addEventListener('click', function () {
-        btn.forEach(button => {
-            // commented out until live
-            modal.style.display = "block";
-        });
-    }));
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-
-    // Credit for password protection code: https://github.com/matteobrusa/Password-protection-for-static-pages
-    function loadPage(pwd) {
-
-        var hash = pwd;
-        hash = Sha1.hash(pwd);
-        var url = hash + "/pension.html";
-
-        $.ajax({
-            url: url,
-            dataType: "html",
-            success: function (data) {
-                window.location = url;
-            },
-            error: function (xhr, ajaxOptions, thrownError) {
-
-                parent.location.hash = hash;
-                //$("#wrongPassword").show();
-                $("#password").attr("placeholder", "wrong password", ).attr('style', 'border-color:#EA4A64');
-                $("#password").val("");
-            }
-        });
-    }
-
-    $("#loginbutton").on("click", function () {
-        loadPage($("#password").val());
-    });
-    $("#password").keypress(function (e) {
-        if (e.which == 13) {
-
-            loadPage($("#password").val());
-        }
-    });
-    $("#password").focus();
-
-</script>
+<script type="text/javascript" src="/scripts/password.js"></script>

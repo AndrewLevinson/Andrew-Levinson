@@ -64,13 +64,13 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <block class="close">&times;</block>
             <img src="images/lock.svg" class="center" />
             <h4 style="font-weight: 500">This page requires a password</h4>
             <p>There's sensitive client stuff in here 🕵🏻‍</p>
             <form action="">
                 <!-- <h6 style="text-align: left; margin-bottom: 2px;">Password</h6> -->
-                <input id="password" type="password" placeholder="Password" onkeyup="success()" />
+                <input id="password" type="text" placeholder="Password" onkeyup="success()" />
 
                 <button id="loginbutton" type="button" disabled>View case study &#10230;</button>
             </form>
@@ -168,13 +168,13 @@
                     <div class="panel">
                         <p>Below are case studies from my client work at
                             <a href="https://www.devbridge.com/" style="font-weight:600" target="_blank">Devbridge Group
-                                <sup>&#8663</sup>
+                                <sup>&#8663;</sup>
                             </a>as well as any concept or passion projects. Some of my projects may be password protected &#128274due
                             to tight NDAs. Please reach out to me for access. Enjoy!
                         </p>
                         <br>
                         <h6 class="project-title">Featured Client Case Study:
-                            <a class="myBtn" style="font-weight:600">Event Technology ERP &#128274</a>
+                            <a class="myBtn" style="font-weight:600">Event Technology ERP &#128274;</a>
                         </h6>
                         <div class="myBtn project4" onclick="pageRequest('/eventtech.html');">
                         </div>
@@ -190,7 +190,7 @@
                         <br>
                         <br>
                         <h6 class="project-title">Client Case Study:
-                            <a class="myBtn" style="font-weight:600">Pension Retirement Web App &#128274</a>
+                            <a class="myBtn" style="font-weight:600">Pension Retirement Web App &#128274;</a>
                         </h6>
                         <div class="myBtn project6" onclick="pageRequest('/pension.html');">
                         </div>
@@ -209,13 +209,13 @@
                     <div class="panel">
                         <p>After graduating from DePaul University with an accounting degree, I found an amazing job at
                             <a href="https://www.acceleratedgrowth.com/" style="font-weight:600" target="_blank">Accelerated Growth Advisors
-                                <sup>&#8663</sup>
+                                <sup>&#8663;</sup>
                             </a>. At this small management and financial consulting company in Chicago, I learned how to grow
                             and scale businesses by emphasizing disciplined processes, establishing measurable goals & metrics,
                             and building strong leadership teams.</p>
                         <p>See how I became an Excel power user, a strong
                             <a href="https://media.giphy.com/media/AYwCy4cRCHn0Y/giphy.gif" style="font-weight:600" target="_blank">financial reporting accountant
-                                <sup>&#8663</sup>
+                                <sup>&#8663;</sup>
                             </a>, and even an educator to executives.</p>
                         <br>
                         <h6 class="project-title">Featured Work:
@@ -297,12 +297,12 @@
                     From New York to Chicago and back to New York again, I've been a touring musician in a metal band, a financial consultant
                     for start ups, and a digital product designer at a software agency. There's clearly a war between
                     <a href="https://www.youtube.com/watch?v=0jBK4qDJ-OM" style="font-weight:600" target="_blank">my left brain vs. my right brain
-                        <sup>&#8663</sup>
+                        <sup>&#8663;</sup>
                     </a>.
                     <br>
                     <br> In my free time I like playing guitar, making weird music, and browsing
                     <a href="https://www.reddit.com/r/dataisugly/" style="font-weight:600" target="_blank">my favorite subreddit
-                        <sup>&#8663</sup>
+                        <sup>&#8663;</sup>
                     </a>. I'm probably sitting in a park in Brooklyn right now working through a strange idea – so reach out
                     and we can collaborate. ✌🏻
                 </p>
@@ -347,11 +347,6 @@
                         <div class="fa fa-instagram" alt="Insta" style="font-size: 1.75em"></div>
                     </a>
                 </div>
-                <!-- <div class="one column social">
-                    <a href="https://www.snapchat.com/add/a_levinson" target="_blank">
-                        <div class="fa fa-snapchat" alt="Snap" style="font-size: 1.75em"></div>
-                    </a>
-                </div> -->
             </div>
         </div>
 
@@ -393,84 +388,4 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.rawgit.com/chrisveness/crypto/master/sha1.js"></script>
 <script type="text/javascript" src="/scripts/script.js"></script>
-
-<script type="text/javascript">
-    "use strict";
-
-    // Get the modal
-    const modal = document.getElementById('myModal');
-
-    // Get the button that opens the modal
-    const btn = document.querySelectorAll('.myBtn');
-
-    // Get the <span> element that closes the modal
-    const span = document.querySelector('.close');
-
-
-    // When the user clicks on the button, open the modal 
-    btn.forEach(button => button.addEventListener('click', function () {
-        btn.forEach(button => {
-            // commented out until live
-            modal.style.display = "block";
-        });
-    }));
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-    // enable button when input field has characters
-    function success() {
-        if (document.getElementById("password").value === "") {
-            document.getElementById('loginbutton').disabled = true;
-        } else {
-            document.getElementById('loginbutton').disabled = false;
-        }
-    }
-
-    // needed for multiple pages with same password
-    let page;
-    function pageRequest(pagePass) {
-        page = pagePass;
-    }
-
-    // Credit for password protection code: https://github.com/matteobrusa/Password-protection-for-static-pages
-    function loadPage(pwd) {
-        var hash = pwd;
-        hash = Sha1.hash(pwd);
-        var url = hash + page;
-        $.ajax({
-            url: url,
-            dataType: "html",
-            success: function (data) {
-                window.location = url;
-            },
-            error: function (xhr, ajaxOptions, thrownError) {
-
-                parent.location.hash = hash;
-                //$("#wrongPassword").show();
-                $("#password").attr("placeholder", "wrong password", ).attr('style', 'border-color:#EA4A64');
-                $("#password").val("");
-            }
-        });
-    }
-
-    $("#loginbutton").on("click", function () {
-        loadPage($("#password").val());
-    });
-    $("#password").keypress(function (e) {
-        if (e.which == 13) {
-
-            loadPage($("#password").val());
-        }
-    });
-    $("#password").focus();
-
-</script>
+<script type="text/javascript" src="/scripts/password.js"></script>
