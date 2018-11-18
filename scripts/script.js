@@ -1,4 +1,5 @@
 // Accordion Menu on homepage
+const dataViz = document.getElementById("dataviz");
 const design = document.getElementById("design");
 const music = document.getElementById("music");
 const finance = document.getElementById("finance");
@@ -18,6 +19,7 @@ function trigger(e) {
     }, 800);
   }
 }
+trigger(dataviz);
 
 // open by clicking directly on accordion section
 var i;

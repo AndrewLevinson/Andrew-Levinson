@@ -672,6 +672,23 @@ nav {
   color: #979797;
 }
 
+/* grid layout for DV project previews */
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  object-fit: cover;
+}
+
+.viz-card img:hover {
+  width: 95%;
+}
+.viz-card img {
+  -webkit-transition: width 1.25s, height 1.25s, background-color 1.25s,
+    -webkit-transform 1.25s;
+  transition: width 1.25s, height 1.25s, background-color 1.25s, transform 1.25s;
+}
+
 .project1 {
   align-content: center;
   content: url("../images/UNBREAKABLEBanner_small.png");
