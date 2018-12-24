@@ -19,7 +19,7 @@ function trigger(e) {
     }, 800);
   }
 }
-trigger(dataviz);
+// trigger(dataviz);
 
 // open by clicking directly on accordion section
 var i;

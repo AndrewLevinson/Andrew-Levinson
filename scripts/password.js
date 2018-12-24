@@ -43,7 +43,7 @@ let page;
 function pageRequest(pagePass) {
   page = pagePass;
 }
-
+// let hash;
 // Credit for password protection code: https://github.com/matteobrusa/Password-protection-for-static-pages
 function loadPage(pwd) {
   var hash = pwd;
